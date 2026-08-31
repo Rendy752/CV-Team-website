@@ -1,26 +1,29 @@
 <script lang="ts">
-  import ProjectCard from '$lib/components/ProjectCard.svelte';
-  import type { PageData } from './$types';
+	import ProjectCard from '$lib/components/ProjectCard.svelte';
+	import type { PageData } from './$types';
 
-  let { data }: { data: PageData } = $props();
-  let resume = $derived(data.resume);
+	let { data }: { data: PageData } = $props();
+	let resume = $derived(data.resume);
 </script>
 
 <div class="space-y-12">
-  <!-- Section Projects I've Worked On -->
-  <section class="space-y-6">
-    <!-- Header Section Sesuai Desain -->
-    <div class="space-y-1">
-      <span class="text-xs font-bold tracking-widest text-indigo-600 uppercase">
-        PORTFOLIO CONTRIBUTIONS
-      </span>
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-        Projects I've Worked On
-      </h2>
-      <p class="text-xs sm:text-sm text-slate-500 max-w-2xl">
-        Below are select professional projects delivered or contributed to by {resume.name.split(' ')[0]}. Click any card to explore a thorough case study, the specific challenge faced, and our solution.
-      </p>
-    </div>
+	<!-- Section Projects I've Worked On -->
+	<section class="space-y-6">
+		<!-- Header Section Sesuai Desain -->
+		<div class="space-y-1">
+			<span class="text-xs font-bold tracking-widest text-indigo-600 uppercase">
+				PORTFOLIO CONTRIBUTIONS
+			</span>
+			<h2 class="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
+				Projects I've Worked On
+			</h2>
+			<p class="max-w-2xl text-xs text-slate-500 sm:text-sm">
+				Below are select professional projects delivered or contributed to by {resume.name.split(
+					' '
+				)[0]}. Click any card to explore a thorough case study, the specific challenge faced, and
+				our solution.
+			</p>
+		</div>
 
     <!-- 1 Blok Markup -> N Hasil (Mobile-First: 1 kolom di HP, 2 kolom di tablet/desktop) -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
