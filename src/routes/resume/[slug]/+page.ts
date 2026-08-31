@@ -1,15 +1,16 @@
 import { error } from '@sveltejs/kit';
-import { RESUMES } from '$lib/data/resumes';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = async ({ params }) => {
-	const resume = RESUMES.find((item) => item.slug === params.slug);
+export const load: PageLoad = async ({ params, fetch }) => {
+	const res = await fetch(`/data/${params.slug}.json`);
 
-	if (!resume) {
+	if (!res.ok) {
 		throw error(404, {
-			message: `Resume with slug "${params.slug}" not found`
+			message: `Resume dengan slug "${params.slug}" tidak ditemukan`
 		});
 	}
+
+	const resume = await res.json();
 
 	return {
 		resume
