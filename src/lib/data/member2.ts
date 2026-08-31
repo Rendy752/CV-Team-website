@@ -1,7 +1,7 @@
 import type { Member } from '$lib/types';
 
 export const member2: Member = {
-	id: 'arimbi',
+	id: 'arimbi-dwi-syabillah',
 	slug: 'arimbi-dwi-syabillah',
 	name: 'Arimbi Dwi Syabillah',
 	nickname: 'Arimbi',

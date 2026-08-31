@@ -124,7 +124,7 @@ export const resumes: ResumeData[] = [
 		projects: [
 			{
 				id: "9",
-				slug: "baiq-apps-laz-core-erp",
+				slug: "9",
 				name: "Baiq Apps & Laz Core ERP",
 				shortDescription:
 					"Developed microservices such as payment services, notification services, ziswaf services, qurban services, and partnership services.",
@@ -279,7 +279,7 @@ export const resumes: ResumeData[] = [
 		projects: [
 			{
 				id: "11",
-				slug: "premium-leaves-tea-classification",
+				slug: "11",
 				name: "Premium Leaves Tea Classification",
 				shortDescription:
 					"Classification of premium tea leaves using MobileNetV2 and YOLOv8/YOLOv11 to improve accuracy and efficiency.",
@@ -399,7 +399,7 @@ export const resumes: ResumeData[] = [
 		projects: [
 			{
 				id: "10",
-				slug: "knowledge-management-system",
+				slug: "10",
 				name: "Knowledge Management System",
 				shortDescription:
 					"Engineered a machine learning-based email classification dashboard to automate phishing detection.",
@@ -527,7 +527,7 @@ export const resumes: ResumeData[] = [
 		projects: [
 			{
 				id: "2",
-				slug: "web-internal-jubelo",
+				slug: "2",
 				name: "Web Internal Jubelo",
 				shortDescription:
 					"Aplikasi Jubelo Internal System mengelola anggota, klien, dashboard, event calender, dan perhitungan HPP untuk mendukung efisiensi dan keputusan bisnis.",
@@ -678,8 +678,8 @@ export const resumes: ResumeData[] = [
 
 		projects: [
 			{
-				id: "animevibe",
-				slug: "animevibe",
+				id: "4",
+				slug: "4",
 				name: "AnimeVibe",
 				shortDescription:
 					"A comprehensive Android app delivering anime recommendations, advanced filtering, episode streaming, and offline data management.",
@@ -721,8 +721,8 @@ export const resumes: ResumeData[] = [
 			},
 
 			{
-				id: "discord-clone",
-				slug: "discord-clone",
+				id: "5",
+				slug: "5",
 				name: "Discord Clone",
 				shortDescription:
 					"A feature-rich Discord Clone enhanced with real-time messaging, media sharing, and video/audio rooms.",
@@ -742,7 +742,7 @@ export const resumes: ResumeData[] = [
 
 			{
 				id: "6",
-				slug: "maribermusik-mobile",
+				slug: "6",
 				name: "MariBermusik Mobile",
 				shortDescription:
 					"A collaborative Flutter-based mobile app designed to help users learn musical instruments through materials provided by other professional users.",
@@ -760,7 +760,7 @@ export const resumes: ResumeData[] = [
 
 			{
 				id: "7",
-				slug: "libraryapp",
+				slug: "7",
 				name: "LibraryApp",
 				shortDescription:
 					"A Laravel based CMS for managing library books and categories with role-based access for users and admins.",
@@ -779,7 +779,7 @@ export const resumes: ResumeData[] = [
 
 			{
 				id: "8",
-				slug: "mealapp",
+				slug: "8",
 				name: "MealApp",
 				shortDescription:
 					"A meal-themed web app to enable meal exploration with category filtering and detailed recipes.",

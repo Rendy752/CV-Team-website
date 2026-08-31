@@ -34,18 +34,6 @@
 	<meta name="description" content={resume.about} />
 </svelte:head>
 
-<<<<<<<<< Temporary merge branch 1
-<Navbar
-	currentTab="home"
-	selectedMemberId={slug}
-	onBackToTeam={() => goto(resolve('/'))}
-/>
-
-<div id="member-profile-page" class="min-h-screen bg-slate-50 py-8 lg:py-12 space-y-16" in:fade={{ duration: 200 }}>
-=========
-<Navbar currentTab="home" selectedMemberId={slug} onBackToTeam={() => goto('/')} />
->>>>>>>>> Temporary merge branch 2
-
 <div
 	id="member-profile-page"
 	class="min-h-screen space-y-16 bg-slate-50 py-8 lg:py-12"
@@ -249,7 +237,6 @@
 								<div
 									class="absolute top-1.5 -left-7.75 h-3 w-3 rounded-full border-2 border-slate-50 bg-emerald-500 shadow-sm"
 								></div>
->>>>>>>>> Temporary merge branch 2
 								<div class="space-y-1.5">
 									<div class="flex flex-col gap-y-1 sm:flex-row sm:items-center sm:justify-between">
 										<h3 class="text-sm font-bold text-slate-900">
@@ -472,11 +459,11 @@
 							Duration: {project.duration}
 						</span>
 
-						<span
+						<a
 							class="text-xs font-bold text-slate-900 transition-colors group-hover:text-indigo-600"
-						>
+							href={`/project/${project.id}`}						>
 							View Detail &rarr;
-						</span>
+						</a>
 					</div>
 				</div>
 			{:else}

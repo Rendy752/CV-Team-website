@@ -2,7 +2,7 @@ import type { ProjectData } from '$lib/types';
 
 export const projects: ProjectData[] = [
 	{
-		slug: 'premium-leaves-tea-classification',
+		slug: '11',
 		title: 'Premium Leaves Tea Classification',
 		type: 'AI / Computer Vision',
 		description:
@@ -24,7 +24,7 @@ export const projects: ProjectData[] = [
 		deployment: 'Lab Environment'
 	},
 	{
-		slug: 'web-internal-jubelo',
+		slug: '2',
 		title: 'Web Internal Jubelo',
 		type: 'Internal Web Application',
 		description:
@@ -45,7 +45,7 @@ export const projects: ProjectData[] = [
 		deployment: 'N/A'
 	},
 	{
-		slug: 'siaps-penyusunan-akreditasi-program-studi',
+		slug: '3',
 		title: 'SIAPS - Penyusunan Akreditasi Program Studi',
 		type: 'Academic Web Application',
 		description:
@@ -67,7 +67,7 @@ export const projects: ProjectData[] = [
 		deployment: 'N/A'
 	},
 	{
-		slug: 'animevibe',
+		slug: '4',
 		title: 'AnimeVibe',
 		type: 'Mobile Application',
 		description:
@@ -88,7 +88,7 @@ export const projects: ProjectData[] = [
 		deployment: 'Play Store'
 	},
 	{
-		slug: 'discord-clone',
+		slug: '5',
 		title: 'Discord Clone',
 		type: 'Web Application',
 		description:
@@ -110,7 +110,7 @@ export const projects: ProjectData[] = [
 		deployment: 'Vercel'
 	},
 	{
-		slug: 'maribermusik-mobile',
+		slug: '6',
 		title: 'MariBermusik Mobile',
 		type: 'Mobile Application',
 		description:
@@ -131,7 +131,7 @@ export const projects: ProjectData[] = [
 		deployment: 'Mobile'
 	},
 	{
-		slug: 'libraryapp',
+		slug: '7',
 		title: 'LibraryApp',
 		type: 'Web Application',
 		description:
@@ -153,7 +153,7 @@ export const projects: ProjectData[] = [
 		deployment: 'Local/Web'
 	},
 	{
-		slug: 'mealapp',
+		slug: '8',
 		title: 'MealApp',
 		type: 'Web Application',
 		description:
@@ -175,7 +175,7 @@ export const projects: ProjectData[] = [
 		deployment: 'Web'
 	},
 	{
-		slug: 'baiq-apps-laz-core-erp',
+		slug: '9',
 		title: 'Baiq Apps & Laz Core ERP',
 		type: 'Microservices Ecosystem',
 		description:
@@ -197,7 +197,7 @@ export const projects: ProjectData[] = [
 		deployment: 'AWS & Kubernetes'
 	},
 	{
-		slug: 'knowledge-management-system',
+		slug: '10',
 		title: 'Knowledge Management System',
 		type: 'Machine Learning Application',
 		description:

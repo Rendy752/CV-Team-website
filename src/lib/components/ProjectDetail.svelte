@@ -2,26 +2,16 @@
 	import type { ProjectData } from '$lib/types';
 
 	let { project }: { project: ProjectData } = $props();
+	let ownerSlug = $derived(project.owner.toLowerCase().replace(/\s+/g, '-'));
+	console.log("owner", ownerSlug)
 </script>
 
 <main class="min-h-screen bg-[#fafbfc] p-6 font-sans text-gray-800 md:p-12 lg:px-24">
 	<header class="mx-auto max-w-7xl space-y-6">
 		<div class="flex flex-wrap items-center justify-between text-sm font-medium text-gray-500">
-			<a href="#" class="border-b border-gray-400 pb-0.5 transition-colors hover:text-gray-800">
-				&larr; Back to Member Profile
-			</a>
-			<span class="text-xs tracking-wider uppercase opacity-70"
-				>route: team / profile / project</span
-			>
-		</div>
-
-		<div class="flex flex-wrap items-center justify-between text-sm font-medium text-gray-500">
-			<a href="#" class="transition-colors hover:text-gray-800">
+			<a href={`/resume/${ownerSlug}`} class="transition-colors hover:text-gray-800">
 				&larr; Back to {project.owner.split(' ')[0]}'s Profile
 			</a>
-			<span class="text-xs tracking-wider uppercase opacity-70"
-				>case: {project.title.toLowerCase().replace(/ /g, '-')}</span
-			>
 		</div>
 	</header>
 
