@@ -1,0 +1,6 @@
+{
+	"name": "DevFive — Engineering Collective & Team CV",
+	"description": "Autonomous engineering collective CV platform featuring 5 specialized developers across Full Stack, UI/UX, Cloud, Mobile, and AI.",
+	"requestFramePermissions": [],
+	"majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
