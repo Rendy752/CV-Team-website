@@ -1,522 +1,800 @@
-import type { ResumeData } from '$lib/types/resume';
+import type { ResumeData } from "$lib/types/resume";
 
-export const RESUMES: ResumeData[] = [
+export const resumes: ResumeData[] = [
 	{
-		slug: 'arimbi-dwi-syabillah',
-		name: 'Arimbi Dwi Syabillah',
-		title: 'IoT & AI Engineer / Junior Developer',
+		slug: "rama-fajar-fadhillah",
+		name: "Rama Fajar Fadhillah, S.Kom",
+		title: "Fullstack Developer",
 		avatarUrl:
-			'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400',
-		address: 'Indonesia',
+			"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+		address: "Indonesia",
+
 		about:
-			'Lulusan D3 Teknologi Telekomunikasi Telkom University dengan minat dan fokus pada pengembangan sistem berbasis Internet of Things (IoT), kecerdasan buatan (AI), dan jaringan komunikasi.',
+			"Saya adalah lulusan Sarjana Teknik Informatika dari STT Terpadu Nurul Fikri dengan IPK 3.76/4.00. Berpengalaman sebagai Web Engineer dan Backend Developer, terbiasa membangun scalable web apps dan API menggunakan PHP (Laravel, Codeigniter), TypeScript (NestJS, NextJS), Golang, serta mengelola infrastruktur berbasis Docker, Linux, Nginx, dan Kubernetes. Aktif mendalami bidang Cybersecurity seperti Penetration Testing, OSINT, dan ISO 27001.",
+
 		objectives: [
-			'Lulusan D3 Teknologi Telekomunikasi di Telkom University',
-			'Memiliki pengalaman sebagai intern junior engineer di industri pertambangan',
-			'Fokus pada IoT, Artificial Intelligence, dan Computer Vision',
-			'Mengintegrasikan AI dan IoT untuk menciptakan solusi inovatif dan adaptif'
+			"Membangun sistem dan aplikasi backend yang aman, tangguh, dan scalable.",
+			"Mengintegrasikan praktik keamanan siber yang baik dalam setiap pengembangan.",
+			"Mengembangkan solusi web dan backend yang reliable untuk kebutuhan bisnis.",
 		],
+
 		links: [
-			{ id: 'github', name: 'GitHub', url: 'https://github.com/' },
 			{
-				id: 'linkedin',
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/arimbidwisyabillah'
-			}
+				label: "Email",
+				url: "mailto:ramafajar805@gmail.com",
+			},
+			{
+				label: "GitHub",
+				url: "https://github.com/nullsec45",
+			},
+			{
+				label: "LinkedIn",
+				url: "https://www.linkedin.com/in/ramarff/",
+			},
 		],
+
 		workExperiences: [
 			{
-				id: 1,
-				companyName: 'Bandung Techno Park, Smart Grow Lab Telkom University',
-				years: 'Juli 2025 - Juli 2026',
-				roles: 'Internship Junior Engineering',
-				jobDesc: [
-					'Berkontribusi dalam penelitian klasifikasi daun menggunakan MobileNetV2, YOLOv8, dan YOLOv11.',
-					'Pengembangan dashboard rantai pasok dan keuangan komunitas agri.',
-					'Sistem mitigasi banjir IoT dan AI.',
-					'Rancangan sistem IoT pemantau sampah portabel.'
-				]
+				id: "exp-1",
+				position: "Backend Developer",
+				company: "PT Lazio Teknologi Bersama",
+				duration: "Februari 2025 - Agustus 2025",
+				description:
+					"Mengembangkan backend Baiq Apps & Laz Core ERP, microservices (payment, notification, ziswaf, qurban, partnership), integrasi payment gateway Doku & Xendit, serta deployment menggunakan Argo CD dan Kubernetes.",
 			},
 			{
-				id: 2,
-				companyName: 'PT. Satria Bahana Sarana (Departemen LPT)',
-				years: 'Desember 2022 - Maret 2023',
-				roles: 'Internship Junior Engineering',
-				jobDesc: [
-					'Membantu pemantauan dan perawatan peralatan tambang.',
-					'Pemilihan teknologi efisiensi operasional.',
-					'Pemantauan kualitas lingkungan di sekitar area tambang.'
-				]
+				id: "exp-2",
+				position: "Backend Developer",
+				company: "Wiseline (Freelance Remote)",
+				duration: "Januari 2024 - Desember 2024",
+				description:
+					"Mengembangkan dan memelihara API, membuat dokumentasi API menggunakan OpenAPI Swagger, serta membangun unit testing dan integration testing dengan Jest dan Supertest.",
 			},
 			{
-				id: 3,
-				companyName: 'PT. Satria Bahana Sarana (Departemen PKPP)',
-				years: 'November 2022 - Desember 2022',
-				roles: 'Internship Junior Engineering',
-				jobDesc: [
-					'Mendukung perencanaan dan pelaksanaan proyek produksi.',
-					'Menganalisis data produksi untuk meningkatkan efisiensi dan kinerja.'
-				]
+				id: "exp-3",
+				position: "Web Engineer",
+				company: "PT Ciptadra Softindo",
+				duration: "November 2022 - Desember 2024",
+				description:
+					"Mengembangkan website klien menggunakan PHP (Laravel, CI), NodeJS, NextJS, melakukan pengamanan kode berbasis OWASP Top 10, penetration testing, serta manajemen database backup menggunakan Cron Job dan Bash.",
 			},
-			{
-				id: 4,
-				companyName: 'PT. Satria Bahana Sarana (Departemen K3L)',
-				years: 'Oktober 2022 - November 2022',
-				roles: 'Internship Junior Engineering',
-				jobDesc: [
-					'Mengembangkan program K3 di lokasi tambang.',
-					'Melakukan inspeksi rutin untuk mengidentifikasi potensi bahaya serta mengurangi risiko kecelakaan.'
-				]
-			}
 		],
+
 		educations: [
 			{
-				id: 1,
-				title: 'Diploma 3 (D3) Teknologi Telekomunikasi',
-				schoolName: 'Telkom University',
-				years: '2023 - 2026'
+				id: "edu-1",
+				institution: "STT Terpadu Nurul Fikri, Depok",
+				degree: "Bachelor Degree in Informatics Engineering",
+				major: "Informatics Engineering",
+				year: "October 2021 - July 2025",
 			},
-			{
-				id: 2,
-				title: 'Geologi Pertambangan',
-				schoolName: 'SMK Bukit Asam',
-				years: '2019 - 2023'
-			}
 		],
+
 		additionalActivities: [],
+
 		skills: [
-			{ type: 'Frontend', tools: ['HTML', 'CSS', 'JavaScript'] },
-			{ type: 'Backend', tools: ['Python', 'Java', 'Node.js', 'Django', 'PHP (Basic)'] },
-			{ type: 'Database', tools: ['MySQL', 'PostgreSQL (Basic)'] },
 			{
-				type: 'Tools & Hardware',
-				tools: [
-					'Arduino',
-					'ESP8266',
-					'ESP32',
-					'TensorFlow/Keras',
-					'YOLOv8',
-					'OpenCV',
-					'Git',
-					'Docker (Basic)',
-					'AWS (Basic)'
-				]
-			}
-		],
-		projects: [
-			{
-				slug: 'iot-hydroponic-fuzzy',
-				category: 'IoT & Automation',
-				title:
-					'IoT Based Fuzzy Logic System for Nutrient and Light Control in Indoor Hydroponic',
-				status: 'Completed',
-				description:
-					'Sistem kendali nutrisi dan pencahayaan hidroponik indoor berbasis IoT menggunakan logika fuzzy.',
-				imageThumbnail:
-					'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&q=80&w=800',
-				role: 'IoT Researcher & Developer',
-				techStack: ['IoT', 'Arduino/ESP32', 'Fuzzy Logic', 'MQTT', 'REST API'],
-				duration: '2026'
-			},
-			{
-				slug: 'smart-grow-lab-projects',
-				category: 'AI & IoT Research',
-				title: 'Smart Grow Lab Research & Community Projects',
-				status: 'Completed',
-				description:
-					'Kumpulan proyek riset computer vision (YOLOv8/v11) dan sistem mitigasi banjir berbasis IoT.',
-				imageThumbnail:
-					'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800',
-				role: 'Researcher & Developer',
-				techStack: ['YOLOv8', 'YOLOv11', 'Python', 'TensorFlow', 'IoT Sensors'],
-				duration: '2025 - 2026'
-			}
-		]
-	},
-	{
-		slug: 'rama-fajar-fadhillah',
-		name: 'Rama Fajar Fadhillah, S.Kom',
-		title: 'Fullstack Developer',
-		avatarUrl:
-			'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
-		address: 'Indonesia',
-		about:
-			'Fullstack developer dengan pengalaman 2+ tahun dalam pengembangan web, backend, serta minat mendalam pada cybersecurity dan cloud infrastructure.',
-		objectives: [
-			'Lulusan Sarjana Teknik Informatika dari STT Terpadu Nurul Fikri (IPK 3.76/4.00)',
-			'2+ tahun pengalaman dalam pengembangan web dan backend',
-			'Terbiasa membangun scalable web apps dan REST API',
-			'Fokus pada Web Development, Linux, Cybersecurity, Penetration Testing, dan OSINT'
-		],
-		links: [
-			{ id: 'github', name: 'GitHub', url: 'https://github.com/nullsec45' },
-			{ id: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/ramarff/' }
-		],
-		workExperiences: [
-			{
-				id: 1,
-				companyName: 'PT Lazio Teknologi Bersama',
-				years: 'Februari 2025 - Agustus 2025',
-				roles: 'Backend Developer',
-				jobDesc: [
-					'Mengembangkan backend Baiq Apps & Laz Core ERP dan microservices (payment, notification, ziswaf, qurban, partnership).',
-					'Integrasi payment gateway Doku & Xendit.',
-					'Deployment menggunakan Argo CD dan Kubernetes.'
-				]
-			},
-			{
-				id: 2,
-				companyName: 'Wiseline',
-				years: 'Januari 2024 - Desember 2024',
-				roles: 'Backend Developer (Freelance Remote)',
-				jobDesc: [
-					'Mengembangkan dan memelihara API.',
-					'Membuat dokumentasi API menggunakan OpenAPI Swagger.',
-					'Membangun unit testing dan integration testing dengan Jest dan Supertest.'
+				category: "Frontend",
+				skills: [
+					"ReactJS",
+					"NextJS",
+					"TypeScript",
+					"JavaScript",
+					"Bootstrap",
+					"Tailwind CSS",
 				],
-				type: 'Remote'
 			},
 			{
-				id: 3,
-				companyName: 'PT Ciptadra Softindo',
-				years: 'November 2022 - Desember 2024',
-				roles: 'Web Engineer',
-				jobDesc: [
-					'Mengembangkan website klien menggunakan PHP (Laravel, CI), NodeJS, NextJS.',
-					'Melakukan pengamanan kode berbasis OWASP Top 10 dan penetration testing.',
-					'Manajemen database backup menggunakan Cron Job dan Bash.'
-				]
-			}
-		],
-		educations: [
-			{
-				id: 1,
-				title: 'Bachelor Degree in Informatics Engineering',
-				schoolName: 'STT Terpadu Nurul Fikri, Depok',
-				years: 'October 2021 - July 2025'
-			}
-		],
-		additionalActivities: [],
-		skills: [
-			{
-				type: 'Frontend',
-				tools: ['ReactJS', 'NextJS', 'TypeScript', 'JavaScript', 'Bootstrap', 'Tailwind CSS']
-			},
-			{
-				type: 'Backend',
-				tools: ['PHP', 'Laravel', 'Codeigniter', 'Golang', 'NodeJS', 'NestJS']
-			},
-			{
-				type: 'Database',
-				tools: ['MySQL', 'PostgreSQL', 'Redis', 'Prisma ORM']
-			},
-			{
-				type: 'Tools & DevOps',
-				tools: [
-					'Docker',
-					'Kubernetes',
-					'AWS',
-					'Linux',
-					'Nginx',
-					'Git',
-					'GitLab',
-					'Jenkins',
-					'Apisix',
-					'RabbitMQ'
-				]
-			}
-		],
-		projects: [
-			{
-				slug: 'baiq-apps-laz-core',
-				category: 'Enterprise Web Application',
-				title: 'Baiq Apps & Laz Core ERP',
-				status: 'Completed',
-				description:
-					'Pengembangan sistem microservices enterprise untuk layanan pembayaran, ziswaf, qurban, dan manajemen ERP.',
-				imageThumbnail:
-					'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
-				role: 'Backend Developer',
-				techStack: [
-					'PHP',
-					'Laravel',
-					'Golang',
-					'AWS RDS',
-					'AWS EC2',
-					'Kubernetes',
-					'Argo CD'
+				category: "Backend",
+				skills: [
+					"PHP",
+					"Laravel",
+					"Codeigniter",
+					"Golang",
+					"NodeJS",
+					"NestJS",
 				],
-				duration: 'Feb 2025 - Agt 2025'
-			}
-		]
-	},
-	{
-		slug: 'muhammad-haikal-ali',
-		name: 'Muhammad Haikal Ali',
-		title: 'Fullstack Developer',
-		avatarUrl:
-			'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
-		address: 'Semarang, Indonesia',
-		about:
-			'Lulusan Ilmu Komputer Universitas Diponegoro dengan pengalaman sebagai Fullstack Developer dan keahlian dalam machine learning serta pengembangan web.',
-		objectives: [
-			'Lulusan Sarjana Ilmu Komputer dari Universitas Diponegoro (IPK 3.54/4.00)',
-			'Fokus pada Fullstack Development, Machine Learning, dan deteksi phishing',
-			'Pengalaman mengembangkan solusi berbasis PHP, Laravel, dan Python',
-			'Mengembangkan solusi perangkat lunak yang aman, efisien, dan berdampak nyata'
-		],
-		links: [
-			{ id: 'github', name: 'GitHub', url: 'https://github.com/haikalassegaf' },
-			{ id: 'linkedin', name: 'LinkedIn', url: 'https://linkedin.com/in/haikalali12' }
-		],
-		workExperiences: [
-			{
-				id: 1,
-				companyName: 'PT Bank Syariah Indonesia',
-				years: 'Januari 2024 - Februari 2024',
-				roles: 'Fullstack Developer',
-				jobDesc: [
-					'Mengembangkan aplikasi web Level 1 Evaluation yang berfokus pada manajemen surat, input, dan output menggunakan PHP dan Laravel untuk antarmuka frontend serta pengaturan routing aplikasi.'
-				]
-			}
-		],
-		educations: [
-			{
-				id: 1,
-				title: 'Bachelor in Computer Science (IPK: 3.54/4.00)',
-				schoolName: 'Diponegoro University',
-				years: '2021 - 2026'
 			},
 			{
-				id: 2,
-				title: 'High School Diploma (Natural Science and Mathematics)',
-				schoolName: 'Semarang 9 High School',
-				years: '2018 - 2021'
-			}
+				category: "Database",
+				skills: [
+					"MySQL",
+					"PostgreSQL",
+					"Redis",
+					"Prisma ORM",
+				],
+			},
+			{
+				category: "Tools & Infrastructure",
+				skills: [
+					"Docker",
+					"Kubernetes",
+					"AWS",
+					"Linux",
+					"Nginx",
+					"Git",
+					"GitLab",
+					"Jenkins",
+					"Apisix",
+					"RabbitMQ",
+				],
+			},
 		],
-		additionalActivities: [],
-		skills: [
-			{ type: 'Frontend', tools: ['HTML', 'JavaScript', 'Flutter'] },
-			{ type: 'Backend', tools: ['PHP', 'Laravel', 'Node.Js', 'Python'] },
-			{ type: 'Database', tools: ['MySQL'] },
-			{ type: 'Tools', tools: ['Google Cloud Platform', 'PostMan', 'C', 'C++'] }
-		],
+
 		projects: [
 			{
-				slug: 'phishing-email-classification',
-				category: 'Machine Learning & Security',
-				title: 'Knowledge Management System & Phishing Detection Dashboard',
-				status: 'Completed',
-				description:
-					'Dashboard klasifikasi email berbasis machine learning untuk otomatisasi deteksi phishing dan analisis performa model.',
-				imageThumbnail:
-					'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800',
-				role: 'Researcher & Developer',
-				techStack: ['Python', 'Machine Learning', 'GUI', 'Data Evaluation'],
-				duration: '2025 - 2026'
+				id: "9",
+				slug: "baiq-apps-laz-core-erp",
+				name: "Baiq Apps & Laz Core ERP",
+				shortDescription:
+					"Developed microservices such as payment services, notification services, ziswaf services, qurban services, and partnership services.",
+				coverImage: null,
+				category: "Microservices Ecosystem",
+				status: "Completed",
+				role: "Backend Developer",
+				duration: "Feb 2025 - Aug 2025",
+				technologies: [
+					"PHP (Laravel)",
+					"Golang",
+					"AWS RDS",
+					"Kubernetes",
+					"RabbitMQ",
+				],
+			},
+		],
+	},
+
+	{
+		slug: "arimbi-dwi-syabillah",
+		name: "Arimbi Dwi Syabillah",
+		title: "IoT & AI Engineer / Junior Developer",
+		avatarUrl:
+			"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
+		address: "Indonesia",
+
+		about:
+			"Saya merupakan lulusan D3 Teknologi Telekomunikasi di Telkom University dengan minat dan fokus pada pengembangan sistem berbasis Internet of Things (IoT), kecerdasan buatan (AI), dan jaringan komunikasi. Memiliki pengalaman sebagai intern junior engineer di industri pertambangan serta aktif dalam berbagai proyek riset dan pengembangan seperti smart agriculture berbasis IoT, computer vision untuk klasifikasi objek, dan pengembangan aplikasi web.",
+
+		objectives: [
+			"Mengintegrasikan teknologi AI dan IoT untuk menciptakan solusi inovatif.",
+			"Mengembangkan sistem yang efisien dan adaptif.",
+			"Menciptakan solusi teknologi yang memberikan dampak nyata bagi masyarakat.",
+		],
+
+		links: [
+			{
+				label: "Email",
+				url: "mailto:arimbidwisyabillah1304@gmail.com",
 			},
 			{
-				slug: 'undip-community-service',
-				category: 'Web Application',
-				title: 'Diponegoro University Community Service Village Profile',
-				status: 'Completed',
-				description:
-					'Aplikasi web Profil Desa berbasis WordPress untuk digitalisasi informasi komunitas dan layanan administrasi.',
-				imageThumbnail:
-					'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
-				role: 'Web Developer',
-				techStack: ['WordPress', 'PHP', 'HTML', 'CMS'],
-				duration: '2025'
-			}
-		]
-	},
-	{
-		slug: 'najwan-zaky',
-		name: 'Najwan Zaky',
-		title: 'Full Stack Developer',
-		avatarUrl:
-			'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
-		address: 'Bandung, Jawa Barat',
-		about:
-			'Full Stack Developer berpengalaman dalam membangun RESTful API, arsitektur database, dan antarmuka web yang andal.',
-		objectives: [
-			'Lulusan Teknik Informatika Politeknik Negeri Bandung',
-			'Keahlian dalam Golang, Laravel, PostgreSQL, React.js, dan Vue.js',
-			'Berpengalaman dalam implementasi autentikasi, RBAC, dan optimasi database',
-			'Fokus pada arsitektur sistem, database relasional, dan performa backend'
+				label: "GitHub",
+				url: "https://github.com/",
+			},
+			{
+				label: "LinkedIn",
+				url: "https://www.linkedin.com/in/arimbidwisyabillah",
+			},
 		],
-		links: [
-			{ id: 'github', name: 'GitHub', url: 'https://github.com/najwanzaky' },
-			{ id: 'linkedin', name: 'LinkedIn', url: 'https://linkedin.com/in/najwan-zaky' }
-		],
+
 		workExperiences: [
 			{
-				id: 1,
-				companyName: 'PT Tabel Data Informatika',
-				years: 'Des 2025 - Jun 2026',
-				roles: 'Full Stack Developer',
-				jobDesc: [
-					'Bertanggung jawab membangun dan memelihara aplikasi web menggunakan React, Golang, dan PostgreSQL.',
-					'Menangani pengembangan RESTful API, integrasi Keycloak, penerapan RBAC, serta optimasi database.'
-				]
+				id: "exp-1",
+				position: "Internship Junior Engineering",
+				company:
+					"Bandung Techno Park, Smart Grow Lab Telkom University",
+				duration: "Juli 2025 - Juli 2026",
+				description:
+					"Berkontribusi dalam penelitian klasifikasi daun menggunakan MobileNetV2 dan YOLOv8 & YOLOv11, pengembangan dashboard rantai pasok dan keuangan komunitas agri, sistem mitigasi banjir IoT dan AI, serta rancangan sistem IoT pemantau sampah portabel.",
 			},
 			{
-				id: 2,
-				companyName: 'Jubelo',
-				years: 'Jun 2024 - Okt 2024',
-				roles: 'Full Stack Developer Intern',
-				jobDesc: [
-					'Mengimplementasikan antarmuka pengguna frontend menggunakan Vue.js.',
-					'Mengembangkan backend RESTful API dengan Laravel serta MySQL untuk sistem internal Jubelo.'
-				]
-			}
+				id: "exp-2",
+				position: "Internship Junior Engineering",
+				company:
+					"PT. Satria Bahana Sarana (Departemen LPT)",
+				duration: "Desember 2022 - Maret 2023",
+				description:
+					"Membantu pemantauan dan perawatan peralatan tambang, pemilihan teknologi efisiensi operasional, serta pemantauan kualitas lingkungan di sekitar area tambang.",
+			},
+			{
+				id: "exp-3",
+				position: "Internship Junior Engineering",
+				company:
+					"PT. Satria Bahana Sarana (Departemen PKPP)",
+				duration: "November 2022 - Desember 2022",
+				description:
+					"Mendukung perencanaan dan pelaksanaan proyek produksi serta menganalisis data produksi untuk meningkatkan efisiensi dan kinerja.",
+			},
+			{
+				id: "exp-4",
+				position: "Internship Junior Engineering",
+				company:
+					"PT. Satria Bahana Sarana (Departemen K3L)",
+				duration: "Oktober 2022 - November 2022",
+				description:
+					"Mengembangkan program K3 di lokasi tambang dan melakukan inspeksi rutin untuk mengidentifikasi potensi bahaya serta mengurangi risiko kecelakaan.",
+			},
 		],
+
 		educations: [
 			{
-				id: 1,
-				title: 'Diploma / Sarjana Terapan Teknik Informatika',
-				schoolName: 'Politeknik Negeri Bandung',
-				years: '2022 - 2025'
-			}
+				id: "edu-1",
+				institution: "Telkom University",
+				degree: "Diploma 3 (D3)",
+				major: "Teknologi Telekomunikasi",
+				year: "2023 - 2026",
+			},
+			{
+				id: "edu-2",
+				institution: "SMK Bukit Asam",
+				degree: "Sekolah Menengah Kejuruan",
+				major: "Geologi Pertambangan",
+				year: "2019 - 2023",
+			},
 		],
+
 		additionalActivities: [],
+
 		skills: [
 			{
-				type: 'Frontend',
-				tools: ['React.js', 'Vue.js', 'Nuxt.js', 'Tailwind CSS', 'TypeScript']
+				category: "Frontend",
+				skills: [
+					"HTML",
+					"CSS",
+					"JavaScript",
+				],
 			},
-			{ type: 'Backend', tools: ['Golang', 'Laravel', 'Node.js', 'PHP', 'Java'] },
-			{ type: 'Database', tools: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'] },
-			{ type: 'Tools', tools: ['Git', 'GitHub', 'Figma', 'Docker', 'Postman', 'Keycloak'] }
+			{
+				category: "Backend",
+				skills: [
+					"Python",
+					"Java",
+					"Node.js",
+					"Django",
+					"PHP (Basic)",
+				],
+			},
+			{
+				category: "Database",
+				skills: [
+					"MySQL",
+					"PostgreSQL (Basic)",
+				],
+			},
+			{
+				category: "Tools & Technologies",
+				skills: [
+					"Arduino",
+					"ESP8266",
+					"ESP32",
+					"TensorFlow/Keras",
+					"YOLOv8",
+					"OpenCV",
+					"Git",
+					"Docker (Basic)",
+					"AWS (Basic)",
+				],
+			},
 		],
+
 		projects: [
 			{
-				slug: 'digital-village-system',
-				category: 'Enterprise Web Application',
-				title: 'Website Desa Digital (BuildWithAngga)',
-				status: 'Completed',
-				description:
-					'Aplikasi administrasi desa berbasis Laravel dan Vue.js dengan integrasi Midtrans payment gateway untuk layanan warga.',
-				imageThumbnail:
-					'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
-				role: 'Full Stack Developer',
-				techStack: ['Laravel', 'Vue.js', 'MySQL', 'Midtrans API', 'Tailwind CSS'],
-				duration: 'Ongoing / 2025'
+				id: "11",
+				slug: "premium-leaves-tea-classification",
+				name: "Premium Leaves Tea Classification",
+				shortDescription:
+					"Classification of premium tea leaves using MobileNetV2 and YOLOv8/YOLOv11 to improve accuracy and efficiency.",
+				coverImage: null,
+				category: "AI / Computer Vision",
+				status: "Ongoing",
+				role: "IOT Researcher & Developer",
+				duration: "Jul 2025 - Jul 2026",
+				technologies: [
+					"Python",
+					"MobileNetV2",
+					"YOLOv8",
+					"Computer Vision",
+				],
+			},
+		],
+	},
+
+	{
+		slug: "muhammad-haikal-ali",
+		name: "Muhammad Haikal Ali",
+		title: "Fullstack Developer",
+		avatarUrl:
+			"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+		address: "Semarang, Indonesia",
+
+		about:
+			"Saya adalah lulusan Sarjana Ilmu Komputer dari Universitas Diponegoro dengan IPK 3.54/4.00, memiliki ketertarikan kuat pada pengembangan web, manajemen sistem, dan solusi berbasis kecerdasan buatan. Berpengalaman sebagai Fullstack Developer dalam membangun aplikasi web menggunakan PHP dan Laravel, serta mengerjakan proyek riset machine learning untuk deteksi phishing dan pengembangan aplikasi komunitas.",
+
+		objectives: [
+			"Mengembangkan solusi perangkat lunak yang aman dan efisien.",
+			"Membangun solusi digital yang berdampak nyata bagi organisasi maupun masyarakat.",
+			"Mengembangkan aplikasi web dan sistem berbasis kecerdasan buatan.",
+		],
+
+		links: [
+			{
+				label: "Email",
+				url: "mailto:muhammadhaikalali68@gmail.com",
 			},
 			{
-				slug: 'campus-accreditation-system',
-				category: 'Enterprise Web Application',
-				title: 'Campus Accreditation System',
-				status: 'Completed',
-				description:
-					'Sistem aplikasi web tingkat enterprise untuk kepatuhan akreditasi universitas dan manajemen audit dokumen otomatis.',
-				imageThumbnail:
-					'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
-				role: 'Full Stack Architect & Database Designer',
-				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
-				duration: '6 Bulan'
-			}
-		]
-	},
-	{
-		slug: 'rendy-pratama',
-		name: 'Rendy Pratama',
-		title: 'Programmer / FullStack Developer',
-		avatarUrl:
-			'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
-		address: 'Palembang, South Sumatra',
-		about:
-			'Recent Information Systems graduate with a proven track record of rapidly mastering complex tech stacks and business logic within fast-paced environments.',
-		objectives: [
-			'Bachelor of Information Systems graduate (GPA: 3.93/4.00)',
-			'Experienced in ERP systems, API integrations, and dynamic commission modules',
-			'Proficient in React, Next.js, Laravel, Flutter, and Kotlin',
-			'Passionate about building scalable web and mobile applications'
+				label: "GitHub",
+				url: "https://github.com/haikalassegaf",
+			},
+			{
+				label: "LinkedIn",
+				url: "https://linkedin.com/in/haikalali12",
+			},
 		],
-		links: [
-			{ id: 'github', name: 'GitHub', url: 'https://github.com/' },
-			{ id: 'linkedin', name: 'LinkedIn', url: 'https://linkedin.com/in/rendyp' }
-		],
+
 		workExperiences: [
 			{
-				id: 1,
-				companyName: 'Nusantara Sakti Group, Jakarta',
-				years: 'Aug 2025 - Present',
-				roles: 'Programmer',
-				jobDesc: [
-					'Develop and maintain internal marketing ERP.',
-					'Implement new LOC and COE features.',
-					'Engineer dynamic commission calculation modules.',
-					'Develop high-frequency API integrations for SPK.'
-				]
+				id: "exp-1",
+				position: "Fullstack Developer",
+				company: "PT Bank Syariah Indonesia",
+				duration: "Januari 2024 - Februari 2024",
+				description:
+					"Mengembangkan aplikasi web Level 1 Evaluation yang berfokus pada manajemen surat, input, dan output menggunakan PHP dan Laravel untuk antarmuka frontend serta pengaturan routing aplikasi.",
 			},
-			{
-				id: 2,
-				companyName: 'PT Nusantara Infrastructure Tbk, Jakarta',
-				years: 'Feb 2024 - Jun 2024',
-				roles: 'FullStack Developer Intern',
-				jobDesc: [
-					'Delivered an average of four new feature releases per month.',
-					'Improved application reliability by resolving critical user issues (15% reduction in major bug reports).',
-					'Developed interactive charts and maps for over 700,000 data points.'
-				]
-			},
-			{
-				id: 3,
-				companyName: 'Unit Kegiatan Mahasiswa Programming, Palembang',
-				years: 'May 2024 - May 2025',
-				roles: 'Vice Chairman',
-				jobDesc: [
-					'Contributed to the successful organization of the 2024 Coaching Program for over 40 participants.',
-					'Led group projects in a collaborative environment.'
-				]
-			}
 		],
+
 		educations: [
 			{
-				id: 1,
-				title: 'Bachelor of Information Systems (GPA: 3.93/4.00)',
-				schoolName: 'Universitas Multi Data Palembang',
-				years: 'Sep 2021 - Apr 2025'
-			}
+				id: "edu-1",
+				institution: "Diponegoro University",
+				degree:
+					"Bachelor in Computer Science (IPK: 3.54/4.00)",
+				major: "Computer Science",
+				year: "2021 - 2026",
+			},
+			{
+				id: "edu-2",
+				institution: "Semarang 9 High School",
+				degree: "High School Diploma",
+				major: "Natural Science and Mathematics",
+				year: "2018 - 2021",
+			},
 		],
+
 		additionalActivities: [],
+
 		skills: [
 			{
-				type: 'Frontend',
-				tools: ['React', 'Next.js', 'JavaScript', 'TypeScript']
+				category: "Frontend",
+				skills: [
+					"HTML",
+					"JavaScript",
+					"Flutter",
+				],
 			},
-			{ type: 'Backend', tools: ['PHP', 'Laravel'] },
-			{ type: 'Database', tools: ['MySQL', 'SQLite', 'Firebase', 'Room'] },
-			{ type: 'Mobile & Tools', tools: ['Flutter', 'Jetpack Compose', 'Kotlin', 'Dart'] }
+			{
+				category: "Backend",
+				skills: [
+					"PHP",
+					"Laravel",
+					"Node.Js",
+					"Python",
+				],
+			},
+			{
+				category: "Database",
+				skills: [
+					"MySQL",
+				],
+			},
+			{
+				category: "Tools & Technologies",
+				skills: [
+					"Google Cloud Platform",
+					"PostMan",
+					"C",
+					"C++",
+				],
+			},
 		],
+
 		projects: [
 			{
-				slug: 'animevibe',
-				category: 'Mobile Application',
-				title: 'AnimeVibe',
-				status: 'Completed',
-				description:
-					'Android application for anime enthusiasts with features such as recommendations, filtering, and streaming.',
-				imageThumbnail:
-					'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&q=80&w=800',
-				role: 'Android Developer',
-				techStack: ['Kotlin', 'Android', 'Room', 'Retrofit', 'Coroutines', 'MVVM'],
-				duration: '2024 - 2025'
+				id: "10",
+				slug: "knowledge-management-system",
+				name: "Knowledge Management System",
+				shortDescription:
+					"Engineered a machine learning-based email classification dashboard to automate phishing detection.",
+				coverImage: null,
+				category: "Machine Learning Application",
+				status: "Completed",
+				role: "Developer & Researcher",
+				duration: "N/A",
+				technologies: [
+					"Python",
+					"Machine Learning",
+					"GUI",
+				],
+			},
+		],
+	},
+
+	{
+		slug: "najwan-zaky",
+		name: "Najwan Zaky",
+		title: "Full Stack Developer",
+		avatarUrl:
+			"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+		address: "Bandung, Jawa Barat",
+
+		about:
+			"Saya adalah lulusan Teknik Informatika yang memiliki minat dan pengalaman mendalam di bidang pengembangan web, khususnya sebagai Backend dan Full Stack Developer. Terbiasa membangun RESTful API menggunakan Golang, Laravel, dan PostgreSQL, serta mengembangkan antarmuka web menggunakan React.js, Vue.js, dan Nuxt.js. Berpengalaman dalam implementasi autentikasi, manajemen role & permission (RBAC), serta optimasi database.",
+
+		objectives: [
+			"Membangun aplikasi end-to-end yang clean dan maintainable.",
+			"Mengembangkan aplikasi yang scalable untuk kebutuhan bisnis maupun publik.",
+			"Mengembangkan solusi backend dengan performa dan arsitektur yang baik.",
+			"Berkontribusi pada pengembangan open source.",
+		],
+
+		links: [
+			{
+				label: "Email",
+				url: "mailto:najwanzaky21@gmail.com",
 			},
 			{
-				slug: 'discord-clone',
-				category: 'Web Application',
-				title: 'Discord Clone',
-				status: 'Completed',
+				label: "GitHub",
+				url: "https://github.com/najwanzakyahmad",
+			},
+			{
+				label: "LinkedIn",
+				url: "https://linkedin.com/in/najwan-zaky-ahmad",
+			},
+		],
+
+		workExperiences: [
+			{
+				id: "exp-1",
+				position: "Full Stack Developer",
+				company: "PT Tabel Data Informatika",
+				duration: "Des 2025 - Jun 2026",
 				description:
-					'Real-time chat platform with text, voice, and video capabilities.',
-				imageThumbnail:
-					'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800',
-				role: 'FullStack Developer',
-				techStack: ['Next.js', 'TypeScript', 'Clerk', 'WebSockets', 'Socket.io'],
-				duration: '2024 - 2025'
-			}
-		]
-	}
+					"Bertanggung jawab membangun dan memelihara aplikasi web menggunakan React, Golang, dan PostgreSQL. Menangani pengembangan RESTful API, integrasi Keycloak, penerapan RBAC, serta optimasi database.",
+			},
+			{
+				id: "exp-2",
+				position: "Full Stack Developer Intern",
+				company: "Jubelo",
+				duration: "Jun 2024 - Okt 2024",
+				description:
+					"Mengimplementasikan antarmuka pengguna frontend menggunakan Vue.js dan mengembangkan backend RESTful API dengan Laravel serta MySQL untuk sistem internal Jubelo, serta mengintegrasikannya secara mulus.",
+			},
+		],
+
+		educations: [
+			{
+				id: "edu-1",
+				institution: "Politeknik Negeri Bandung",
+				degree: "Diploma / Sarjana Terapan",
+				major: "Teknik Informatika",
+				year: "2022 - 2025",
+			},
+		],
+
+		additionalActivities: [],
+
+		skills: [
+			{
+				category: "Frontend",
+				skills: [
+					"React.js",
+					"Vue.js",
+					"Nuxt.js",
+					"Tailwind CSS",
+					"TypeScript",
+				],
+			},
+			{
+				category: "Backend",
+				skills: [
+					"Golang",
+					"Laravel",
+					"Node.js",
+					"PHP",
+					"Java",
+				],
+			},
+			{
+				category: "Database",
+				skills: [
+					"PostgreSQL",
+					"MySQL",
+					"MongoDB",
+					"Redis",
+				],
+			},
+			{
+				category: "Tools & Technologies",
+				skills: [
+					"Git",
+					"GitHub",
+					"Figma",
+					"Docker",
+					"Postman",
+					"Keycloak",
+				],
+			},
+		],
+
+		projects: [
+			{
+				id: "2",
+				slug: "web-internal-jubelo",
+				name: "Web Internal Jubelo",
+				shortDescription:
+					"Aplikasi Jubelo Internal System mengelola anggota, klien, dashboard, event calender, dan perhitungan HPP untuk mendukung efisiensi dan keputusan bisnis.",
+				coverImage: null,
+				category: "Internal Web Application",
+				status: "Completed",
+				role: "Full Stack Developer",
+				duration: "N/A",
+				technologies: [
+					"Vue",
+					"Tailwind",
+					"Laravel",
+					"MySQL",
+				],
+			},
+			{
+				id: "3",
+				slug: "siaps-penyusunan-akreditasi-program-studi",
+				name: "SIAPS - Penyusunan Akreditasi Program Studi",
+				shortDescription:
+					"Aplikasi pendukung penyusunan laporan akreditasi: import dari Google Sheets & Drive.",
+				coverImage: null,
+				category: "Academic Web Application",
+				status: "Completed",
+				role: "Full Stack Developer",
+				duration: "N/A",
+				technologies: [
+					"React",
+					"Laravel",
+					"MongoDB",
+					"Google API",
+				],
+			},
+		],
+	},
+
+	{
+		slug: "rendy-pratama",
+		name: "Rendy Pratama",
+		title: "Programmer / FullStack Developer",
+		avatarUrl:
+			"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+		address: "Palembang, South Sumatra",
+
+		about:
+			"Recent Information Systems graduate with a proven track record of rapidly mastering complex tech stacks and business logic within fast-paced environments. Experienced in developing internal marketing ERP, high-frequency API integrations, dynamic commission calculation modules, and interactive web/mobile applications using modern frameworks like React, Next.js, Laravel, and Flutter.",
+
+		objectives: [
+			"Membangun dynamic web applications.",
+			"Membangun dynamic mobile applications.",
+			"Mengembangkan software dalam lingkungan kolaboratif dan team-oriented.",
+			"Berkontribusi pada pengembangan teknologi yang inovatif dan berkualitas.",
+		],
+
+		links: [
+			{
+				label: "Email",
+				url: "mailto:rendypratama752@gmail.com",
+			},
+			{
+				label: "GitHub",
+				url: "https://github.com/",
+			},
+			{
+				label: "LinkedIn",
+				url: "https://linkedin.com/in/rendyp",
+			},
+		],
+
+		workExperiences: [
+			{
+				id: "exp-1",
+				position: "Programmer",
+				company: "Nusantara Sakti Group, Jakarta",
+				duration: "Aug 2025 - Present",
+				description:
+					"Develop and maintain internal marketing ERP. Implement new LOC and COE features, engineer dynamic commission calculation modules, and develop high-frequency API integrations for SPK.",
+			},
+			{
+				id: "exp-2",
+				position: "FullStack Developer Intern",
+				company: "PT Nusantara Infrastructure Tbk, Jakarta",
+				duration: "Feb 2024 - Jun 2024",
+				description:
+					"Delivered an average of four new feature releases per month, improved application reliability by resolving critical user issues (15% reduction in major bug reports), and developed interactive charts and maps for over 700,000 data points.",
+			},
+		],
+
+		educations: [
+			{
+				id: "edu-1",
+				institution: "Universitas Multi Data Palembang",
+				degree:
+					"Bachelor of Information Systems (GPA: 3.93/4.00)",
+				major: "Information Systems",
+				year: "Sep 2021 - Apr 2025",
+			},
+		],
+
+		additionalActivities: [
+			{
+				id: "activity-1",
+				position: "Vice Chairman",
+				organization:
+					"Unit Kegiatan Mahasiswa Programming, Palembang",
+				duration: "May 2024 - May 2025",
+				description:
+					"Contributed to the successful organization of the 2024 Coaching Program for over 40 participants and led group projects in a collaborative environment.",
+			},
+		],
+
+		skills: [
+			{
+				category: "Frontend",
+				skills: [
+					"React",
+					"Next.js",
+					"JavaScript",
+					"TypeScript",
+				],
+			},
+			{
+				category: "Backend",
+				skills: [
+					"PHP",
+					"Laravel",
+				],
+			},
+			{
+				category: "Database",
+				skills: [
+					"MySQL",
+					"SQLite",
+					"Firebase",
+					"Room",
+				],
+			},
+			{
+				category: "Tools & Technologies",
+				skills: [
+					"Flutter",
+					"Jetpack Compose",
+					"Kotlin",
+					"Dart",
+				],
+			},
+		],
+
+		projects: [
+			{
+				id: "animevibe",
+				slug: "animevibe",
+				name: "AnimeVibe",
+				shortDescription:
+					"A comprehensive Android app delivering anime recommendations, advanced filtering, episode streaming, and offline data management.",
+				coverImage:
+					"https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&q=80&w=800",
+				category: "Mobile Application",
+				status: "In Production",
+				role: "Android Developer",
+				duration: "N/A",
+				technologies: [
+					"Kotlin",
+					"Jetpack Compose",
+					"Room",
+					"Retrofit",
+					"Coroutines",
+					"MVVM",
+				],
+				contribution: [
+					"Created an Android application for anime enthusiasts with recommendations, filtering, and streaming.",
+					"Employed Room for local data storage and integrated technologies like Retrofit, Coroutines, and MVVM.",
+				],
+				screenshots: [
+					"https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+				],
+				challenges: [
+					{
+						challenge:
+							"Managing local data storage efficiently and handling asynchronous network streams smoothly.",
+						solution:
+							"Utilized Room database along with Kotlin Coroutines and Retrofit for robust architecture.",
+					},
+				],
+				result:
+					"Successfully deployed a fully functional Android application for anime streaming and recommendations.",
+				liveDemoUrl:
+					"https://rendyp-portofolio.vercel.app",
+				sourceCodeUrl:
+					"https://github.com/",
+			},
+
+			{
+				id: "discord-clone",
+				slug: "discord-clone",
+				name: "Discord Clone",
+				shortDescription:
+					"A feature-rich Discord Clone enhanced with real-time messaging, media sharing, and video/audio rooms.",
+				coverImage: null,
+				category: "Web Application",
+				status: "Completed",
+				role: "FullStack Developer",
+				duration: "N/A",
+				technologies: [
+					"Next.js",
+					"TypeScript",
+					"Tailwind CSS",
+					"Socket.IO",
+					"LiveKit",
+				],
+			},
+
+			{
+				id: "6",
+				slug: "maribermusik-mobile",
+				name: "MariBermusik Mobile",
+				shortDescription:
+					"A collaborative Flutter-based mobile app designed to help users learn musical instruments through materials provided by other professional users.",
+				coverImage: null,
+				category: "Mobile Application",
+				status: "Completed",
+				role: "Mobile Developer",
+				duration: "N/A",
+				technologies: [
+					"Flutter",
+					"Dart",
+					"Firebase",
+				],
+			},
+
+			{
+				id: "7",
+				slug: "libraryapp",
+				name: "LibraryApp",
+				shortDescription:
+					"A Laravel based CMS for managing library books and categories with role-based access for users and admins.",
+				coverImage: null,
+				category: "Web Application",
+				status: "Completed",
+				role: "FullStack Developer",
+				duration: "N/A",
+				technologies: [
+					"Laravel",
+					"MySQL",
+					"Bootstrap",
+					"Chart.js",
+				],
+			},
+
+			{
+				id: "8",
+				slug: "mealapp",
+				name: "MealApp",
+				shortDescription:
+					"A meal-themed web app to enable meal exploration with category filtering and detailed recipes.",
+				coverImage: null,
+				category: "Web Application",
+				status: "Completed",
+				role: "FullStack Developer",
+				duration: "N/A",
+				technologies: [
+					"JavaScript ES6",
+					"Web Components",
+					"Webpack",
+					"Materialize CSS",
+				],
+			},
+		],
+	},
 ];

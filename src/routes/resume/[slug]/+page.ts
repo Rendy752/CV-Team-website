@@ -1,16 +1,15 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+import type { ResumeData } from '$lib/types/resume';
 
-export const load: PageLoad = async ({ params, fetch }) => {
-	const res = await fetch(`/data/${params.slug}.json`);
+export const load: PageLoad = async ({ fetch, params }) => {
+	const response = await fetch(`/api/resume/${params.slug}`);
 
-	if (!res.ok) {
-		throw error(404, {
-			message: `Resume dengan slug "${params.slug}" tidak ditemukan`
-		});
+	if (!response.ok) {
+		throw error(response.status, 'Gagal mengambil data resume');
 	}
 
-	const resume = await res.json();
+	const resume = (await response.json()) as ResumeData;
 
 	return {
 		resume
