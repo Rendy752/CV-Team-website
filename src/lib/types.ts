@@ -19,7 +19,7 @@ export interface ProjectData {
 	deployment: string;
 }
 export interface Project {
-	id: string;
+	slug: string;
 	name: string;
 	shortDescription: string;
 	coverImage: string;
