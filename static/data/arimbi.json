@@ -1,0 +1,116 @@
+{
+  "id": "arimbi-dwi-syabillah",
+  "name": "Arimbi Dwi Syabillah",
+  "role": "IoT & AI Engineer / Junior Developer",
+  "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
+  "shortIntro": "Lulusan D3 Teknologi Telekomunikasi Telkom University dengan minat dan fokus pada pengembangan sistem berbasis Internet of Things (IoT), kecerdasan buatan (AI), dan jaringan komunikasi.",
+  "email": "arimbidwisyabillah1304@gmail.com",
+  "location": "Indonesia",
+  "github": "https://github.com/",
+  "linkedin": "https://www.linkedin.com/in/arimbidwisyabillah",
+  "aboutMe": {
+    "introduction": "Saya merupakan lulusan D3 Teknologi Telekomunikasi di Telkom University dengan minat dan fokus pada pengembangan sistem berbasis Internet of Things (IoT), kecerdasan buatan (AI), dan jaringan komunikasi.",
+    "background": "Memiliki pengalaman sebagai intern junior engineer di industri pertambangan serta aktif dalam berbagai proyek riset dan pengembangan seperti smart agriculture berbasis IoT, computer vision untuk klasifikasi objek, dan pengembangan aplikasi web.",
+    "interests": [
+      "Internet of Things (IoT)",
+      "Artificial Intelligence",
+      "Computer Vision",
+      "Smart Agriculture",
+      "Telecommunication Networks"
+    ],
+    "goals": "Mengintegrasikan teknologi AI dan IoT untuk menciptakan solusi inovatif yang efisien, adaptif, dan berdampak nyata bagi masyarakat."
+  },
+  "skills": {
+    "frontend": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "backend": [
+      "Python",
+      "Java",
+      "Node.js",
+      "Django",
+      "PHP (Basic)"
+    ],
+    "database": [
+      "MySQL",
+      "PostgreSQL (Basic)"
+    ],
+    "tools": [
+      "Arduino",
+      "ESP8266",
+      "ESP32",
+      "TensorFlow/Keras",
+      "YOLOv8",
+      "OpenCV",
+      "Git",
+      "Docker (Basic)",
+      "AWS (Basic)"
+    ]
+  },
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "Telkom University",
+      "degree": "Diploma 3 (D3)",
+      "major": "Teknologi Telekomunikasi",
+      "year": "2023 - 2026"
+    },
+    {
+      "id": "edu-2",
+      "institution": "SMK Bukit Asam",
+      "degree": "Sekolah Menengah Kejuruan",
+      "major": "Geologi Pertambangan",
+      "year": "2019 - 2023"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "position": "Internship Junior Engineering",
+      "company": "Bandung Techno Park, Smart Grow Lab Telkom University",
+      "duration": "Juli 2025 - Juli 2026",
+      "description": "Berkontribusi dalam penelitian klasifikasi daun menggunakan MobileNetV2 dan YOLOv8 & YOLOv11, pengembangan dashboard rantai pasok dan keuangan komunitas agri, sistem mitigasi banjir IoT dan AI, serta rancangan sistem IoT pemantau sampah portabel."
+    },
+    {
+      "id": "exp-2",
+      "position": "Internship Junior Engineering",
+      "company": "PT. Satria Bahana Sarana (Departemen LPT)",
+      "duration": "Desember 2022 - Maret 2023",
+      "description": "Membantu pemantauan dan perawatan peralatan tambang, pemilihan teknologi efisiensi operasional, serta pemantauan kualitas lingkungan di sekitar area tambang."
+    },
+    {
+      "id": "exp-3",
+      "position": "Internship Junior Engineering",
+      "company": "PT. Satria Bahana Sarana (Departemen PKPP)",
+      "duration": "November 2022 - Desember 2022",
+      "description": "Mendukung perencanaan dan pelaksanaan proyek produksi serta menganalisis data produksi untuk meningkatkan efisiensi dan kinerja."
+    },
+    {
+      "id": "exp-4",
+      "position": "Internship Junior Engineering",
+      "company": "PT. Satria Bahana Sarana (Departemen K3L)",
+      "duration": "Oktober 2022 - November 2022",
+      "description": "Mengembangkan program K3 di lokasi tambang dan melakukan inspeksi rutin untuk mengidentifikasi potensi bahaya serta mengurangi risiko kecelakaan."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "11",
+      "name": "Premium Leaves Tea Classification",
+      "shortDescription": "Classification of premium tea leaves using MobileNetV2 and YOLOv8/YOLOv11 to improve accuracy and efficiency[cite: 3].",
+      "coverImage": null,
+      "category": "AI / Computer Vision",
+      "status": "Ongoing",
+      "role": "IOT Researcher & Developer",
+      "duration": "Jul 2025 - Jul 2026",
+      "technologies": [
+        "Python",
+        "MobileNetV2",
+        "YOLOv8",
+        "Computer Vision"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "najwan-zaky",
+  "name": "Najwan Zaky",
+  "role": "Full Stack Developer",
+  "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+  "shortIntro": "Full Stack Developer berpengalaman dalam membangun RESTful API, arsitektur database, dan antarmuka web yang andal.",
+  "email": "najwanzaky21@gmail.com",
+  "location": "Bandung, Jawa Barat",
+  "github": "https://github.com/najwanzakyahmad",
+  "linkedin": "https://linkedin.com/in/najwan-zaky-ahmad",
+  "aboutMe": {
+    "introduction": "Saya adalah lulusan Teknik Informatika yang memiliki minat dan pengalaman mendalam di bidang pengembangan web, khususnya sebagai Backend dan Full Stack Developer.",
+    "background": "Terbiasa membangun RESTful API menggunakan Golang, Laravel, dan PostgreSQL, serta mengembangkan antarmuka web menggunakan React.js, Vue.js, dan Nuxt.js. Berpengalaman dalam implementasi autentikasi, manajemen role & permission (RBAC), serta optimasi database.",
+    "interests": [
+      "Systems Architecture",
+      "Relational Databases",
+      "Backend Performance",
+      "Open Source Contribution"
+    ],
+    "goals": "Membangun aplikasi end-to-end yang clean, maintainable, dan memberikan solusi nyata yang scalable bagi kebutuhan bisnis maupun publik."
+  },
+  "skills": {
+    "frontend": [
+      "React.js",
+      "Vue.js",
+      "Nuxt.js",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "backend": [
+      "Golang",
+      "Laravel",
+      "Node.js",
+      "PHP",
+      "Java"
+    ],
+    "database": [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Redis"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Figma",
+      "Docker",
+      "Postman",
+      "Keycloak"
+    ]
+  },
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "Politeknik Negeri Bandung",
+      "degree": "Diploma / Sarjana Terapan",
+      "major": "Teknik Informatika",
+      "year": "2022 - 2025"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "position": "Full Stack Developer",
+      "company": "PT Tabel Data Informatika",
+      "duration": "Des 2025 - Jun 2026",
+      "description": "Bertanggung jawab membangun dan memelihara aplikasi web menggunakan React, Golang, dan PostgreSQL. Menangani pengembangan RESTful API, integrasi Keycloak, penerapan RBAC, serta optimasi database."
+    },
+    {
+      "id": "exp-2",
+      "position": "Full Stack Developer Intern",
+      "company": "Jubelo",
+      "duration": "Jun 2024 - Okt 2024",
+      "description": "Mengimplementasikan antarmuka pengguna frontend menggunakan Vue.js dan mengembangkan backend RESTful API dengan Laravel serta MySQL untuk sistem internal Jubelo, serta mengintegrasikannya secara mulus."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "2",
+      "name": "Web Internal Jubelo",
+      "shortDescription": "Aplikasi Jubelo Internal System mengelola anggota, klien, dashboard, event calender, dan perhitungan HPP untuk mendukung efisiensi dan keputusan bisnis.",
+      "coverImage": null,
+      "category": "Internal Web Application",
+      "status": "Completed",
+      "role": "Full Stack Developer",
+      "duration": "N/A",
+      "technologies": [
+        "Vue",
+        "Tailwind",
+        "Laravel",
+        "MySQL"
+      ]
+    },
+    {
+      "slug": "3",
+      "name": "SIAPS - Penyusunan Akreditasi Program Studi",
+      "shortDescription": "Aplikasi pendukung penyusunan laporan akreditasi: import dari Google Sheets & Drive.",
+      "coverImage": null,
+      "category": "Academic Web Application",
+      "status": "Completed",
+      "role": "Full Stack Developer",
+      "duration": "N/A",
+      "technologies": [
+        "React",
+        "Laravel",
+        "MongoDB",
+        "Google API"
+      ]
+    }
+  ]
+}
