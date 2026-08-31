@@ -19,8 +19,6 @@
 	let { data }: { data: PageData } = $props();
 	let resume = $derived(data.resume);
 	let slug = $derived(page.params.slug);
-
-	console.log('resume kontol', resume);
 </script>
 
 <svelte:head>
