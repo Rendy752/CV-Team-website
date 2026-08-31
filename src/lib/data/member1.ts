@@ -8,7 +8,7 @@ export const member1: Member = {
 	role: 'Fullstack Developer',
 	discipline: 'fullstack',
 	avatar:
-		'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
+		'/image/haikal.jpg',
 	shortIntro:
 		'Lulusan Ilmu Komputer Universitas Diponegoro dengan pengalaman sebagai Fullstack Developer dan keahlian dalam machine learning serta pengembangan web.',
 	email: 'muhammadhaikalali68@gmail.com',

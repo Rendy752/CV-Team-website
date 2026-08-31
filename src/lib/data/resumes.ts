@@ -6,7 +6,7 @@ export const resumes: ResumeData[] = [
 		name: "Rama Fajar Fadhillah, S.Kom",
 		title: "Fullstack Developer",
 		avatarUrl:
-			"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+			'/image/fajar.jpg',
 		address: "Indonesia",
 
 		about:
@@ -149,7 +149,7 @@ export const resumes: ResumeData[] = [
 		name: "Arimbi Dwi Syabillah",
 		title: "IoT & AI Engineer / Junior Developer",
 		avatarUrl:
-			"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
+		"/image/arimbi.jpg",
 		address: "Indonesia",
 
 		about:
@@ -303,7 +303,7 @@ export const resumes: ResumeData[] = [
 		name: "Muhammad Haikal Ali",
 		title: "Fullstack Developer",
 		avatarUrl:
-			"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+			"/image/haikal.jpg",
 		address: "Semarang, Indonesia",
 
 		about:
@@ -422,7 +422,7 @@ export const resumes: ResumeData[] = [
 		name: "Najwan Zaky",
 		title: "Full Stack Developer",
 		avatarUrl:
-			"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+			"/image/najwan.jpg",
 		address: "Bandung, Jawa Barat",
 
 		about:
@@ -569,7 +569,7 @@ export const resumes: ResumeData[] = [
 		name: "Rendy Pratama",
 		title: "Programmer / FullStack Developer",
 		avatarUrl:
-			"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+			"/image/rendy.jpg",
 		address: "Palembang, South Sumatra",
 
 		about:

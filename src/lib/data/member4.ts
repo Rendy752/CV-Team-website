@@ -8,7 +8,7 @@ export const member4: Member = {
 	role: 'Full Stack Developer',
 	discipline: 'fullstack',
 	avatar:
-		'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
+		'/image/najwan.jpg',
 	shortIntro:
 		'Full Stack Developer berpengalaman dalam membangun RESTful API, arsitektur database, dan antarmuka web yang andal.',
 	email: 'najwanzaky21@gmail.com',
