@@ -51,3 +51,7 @@
 		</aside>
 	</section>
 </div>
+=======
+<h1>Welcome to SvelteKit</h1>
+<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+>>>>>>> b32e87e6c4f150220267bfaaf0f1fd671c3498a1
