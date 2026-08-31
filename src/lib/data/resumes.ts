@@ -79,7 +79,7 @@ export const RESUMES: ResumeData[] = [
 		],
 		projects: [
 			{
-				id: 'campus-accreditation',
+				slug: 'campus-accreditation',
 				category: 'ENTERPRISE WEB APPLICATION',
 				title: 'Campus Accreditation System',
 				status: 'Completed',
@@ -88,11 +88,10 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/campus.jpg',
 				role: 'Full Stack Architect & Database Designer',
 				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
-				duration: '6 Months',
-				caseStudyUrl: '#'
+				duration: '6 Months'
 			},
 			{
-				id: 'campuss-accreditation',
+				slug: 'campuss-accreditation1',
 				category: 'ENTERPRISE WEB APPLICATION',
 				title: 'Campus Accreditation System',
 				status: 'Completed',
@@ -101,11 +100,10 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/campus.jpg',
 				role: 'Full Stack Architect & Database Designer',
 				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
-				duration: '6 Months',
-				caseStudyUrl: '#'
+				duration: '6 Months'
 			},
 			{
-				id: 'smart-energy-grid',
+				slug: 'smart-energy-grid',
 				category: 'INDUSTRIAL IOT DASHBOARD',
 				title: 'Smart Energy Grid Monitor',
 				status: 'Beta',
@@ -114,8 +112,7 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/energy.jpg',
 				role: 'Backend & Telemetry Pipeline Developer',
 				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
-				duration: '4 Months',
-				caseStudyUrl: '#'
+				duration: '4 Months'
 			}
 		]
 	},
@@ -154,7 +151,7 @@ export const RESUMES: ResumeData[] = [
 		skills: [{ type: 'Frontend', tools: ['SvelteKit', 'Tailwind CSS', 'TypeScript', 'Vite'] }],
 		projects: [
 			{
-				id: 'campus-accreditation',
+				slug: 'campus-accreditation',
 				category: 'ENTERPRISE WEB APPLICATION',
 				title: 'Campus Accreditation System',
 				status: 'Completed',
@@ -163,11 +160,10 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/campus.jpg',
 				role: 'Full Stack Architect & Database Designer',
 				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
-				duration: '6 Months',
-				caseStudyUrl: '#'
+				duration: '6 Months'
 			},
 			{
-				id: 'smart-energy-grid',
+				slug: 'smart-energy-grid',
 				category: 'INDUSTRIAL IOT DASHBOARD',
 				title: 'Smart Energy Grid Monitor',
 				status: 'Beta',
@@ -176,8 +172,7 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/energy.jpg',
 				role: 'Backend & Telemetry Pipeline Developer',
 				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
-				duration: '4 Months',
-				caseStudyUrl: '#'
+				duration: '4 Months'
 			}
 		]
 	},
@@ -196,7 +191,7 @@ export const RESUMES: ResumeData[] = [
 		skills: [{ type: 'Design & Code', tools: ['Figma', 'TailwindCSS', 'HTML/CSS Semantics'] }],
 		projects: [
 			{
-				id: 'campus-accreditation',
+				slug: 'campus-accreditation',
 				category: 'ENTERPRISE WEB APPLICATION',
 				title: 'Campus Accreditation System',
 				status: 'Completed',
@@ -205,11 +200,10 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/campus.jpg',
 				role: 'Full Stack Architect & Database Designer',
 				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
-				duration: '6 Months',
-				caseStudyUrl: '#'
+				duration: '6 Months'
 			},
 			{
-				id: 'smart-energy-grid',
+				slug: 'smart-energy-grid',
 				category: 'INDUSTRIAL IOT DASHBOARD',
 				title: 'Smart Energy Grid Monitor',
 				status: 'Beta',
@@ -218,8 +212,7 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/energy.jpg',
 				role: 'Backend & Telemetry Pipeline Developer',
 				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
-				duration: '4 Months',
-				caseStudyUrl: '#'
+				duration: '4 Months'
 			}
 		]
 	},
@@ -238,7 +231,7 @@ export const RESUMES: ResumeData[] = [
 		skills: [{ type: 'DevOps', tools: ['Docker', 'Kubernetes', 'Linux', 'CI/CD'] }],
 		projects: [
 			{
-				id: 'campus-accreditation',
+				slug: 'campus-accreditation',
 				category: 'ENTERPRISE WEB APPLICATION',
 				title: 'Campus Accreditation System',
 				status: 'Completed',
@@ -247,11 +240,10 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/campus.jpg',
 				role: 'Full Stack Architect & Database Designer',
 				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
-				duration: '6 Months',
-				caseStudyUrl: '#'
+				duration: '6 Months'
 			},
 			{
-				id: 'smart-energy-grid',
+				slug: 'smart-energy-grid',
 				category: 'INDUSTRIAL IOT DASHBOARD',
 				title: 'Smart Energy Grid Monitor',
 				status: 'Beta',
@@ -260,8 +252,7 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/energy.jpg',
 				role: 'Backend & Telemetry Pipeline Developer',
 				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
-				duration: '4 Months',
-				caseStudyUrl: '#'
+				duration: '4 Months'
 			}
 		]
 	},
@@ -280,7 +271,7 @@ export const RESUMES: ResumeData[] = [
 		skills: [{ type: 'Analytics', tools: ['SQL', 'PostgreSQL', 'Python', 'Tableau'] }],
 		projects: [
 			{
-				id: 'campus-accreditation',
+				slug: 'campus-accreditation',
 				category: 'ENTERPRISE WEB APPLICATION',
 				title: 'Campus Accreditation System',
 				status: 'Completed',
@@ -289,11 +280,10 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/campus.jpg',
 				role: 'Full Stack Architect & Database Designer',
 				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
-				duration: '6 Months',
-				caseStudyUrl: '#'
+				duration: '6 Months'
 			},
 			{
-				id: 'smart-energy-grid',
+				slug: 'smart-energy-grid',
 				category: 'INDUSTRIAL IOT DASHBOARD',
 				title: 'Smart Energy Grid Monitor',
 				status: 'Beta',
@@ -302,8 +292,7 @@ export const RESUMES: ResumeData[] = [
 				imageThumbnail: '/images/projects/energy.jpg',
 				role: 'Backend & Telemetry Pipeline Developer',
 				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
-				duration: '4 Months',
-				caseStudyUrl: '#'
+				duration: '4 Months'
 			}
 		]
 	}

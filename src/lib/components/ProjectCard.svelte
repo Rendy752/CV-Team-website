@@ -62,5 +62,11 @@
   <!-- Footer Link & Duration -->
   <div class="px-5 sm:px-6 py-4 border-t border-slate-100 flex justify-between items-center bg-slate-50/50 text-xs">
     <span class="text-slate-400">Duration: {project.duration}</span>
+    <a 
+      href={project.slug || '#'} 
+      class="font-bold text-slate-900 hover:text-indigo-600 flex items-center gap-1 transition-colors"
+    >
+      View Case Study <span aria-hidden="true">&rarr;</span>
+    </a>
   </div>
 </article>

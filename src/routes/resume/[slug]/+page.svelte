@@ -24,7 +24,7 @@
 
     <!-- 1 Blok Markup -> N Hasil (Mobile-First: 1 kolom di HP, 2 kolom di tablet/desktop) -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {#each resume.projects as project (project.id)}
+      {#each resume.projects as project (project.slug)}
         <ProjectCard {project} />
       {:else}
         <div class="col-span-2 text-center py-12 border-2 border-dashed border-slate-200 rounded-2xl">
