@@ -7,8 +7,7 @@ export const member2: Member = {
 	nickname: 'Arimbi',
 	role: 'IoT & AI Engineer / Junior Developer',
 	discipline: 'ai-iot',
-	avatar:
-		'/image/arimbi.jpg',
+	avatar: '/image/arimbi.jpg',
 	shortIntro:
 		'Lulusan D3 Teknologi Telekomunikasi Telkom University dengan minat dan fokus pada pengembangan sistem berbasis Internet of Things (IoT), kecerdasan buatan (AI), dan jaringan komunikasi.',
 	email: 'arimbidwisyabillah1304@gmail.com',

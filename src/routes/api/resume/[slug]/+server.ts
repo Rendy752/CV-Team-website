@@ -3,13 +3,13 @@ import type { RequestHandler } from './$types';
 import { resumes } from '$lib/data/resumes';
 
 export const GET: RequestHandler = async ({ params }) => {
-    const resumeSlug = params.slug;
+	const resumeSlug = params.slug;
 
-    const resumeData = resumes.find((resume) => resume.slug === resumeSlug);
+	const resumeData = resumes.find((resume) => resume.slug === resumeSlug);
 
-    if (resumeData) {
-        return json(resumeData);
-    }
+	if (resumeData) {
+		return json(resumeData);
+	}
 
-    throw error(404, 'Resume not found');
+	throw error(404, 'Resume not found');
 };

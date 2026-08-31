@@ -3,7 +3,7 @@
 
 	let { project }: { project: ProjectData } = $props();
 	let ownerSlug = $derived(project.owner.toLowerCase().replace(/\s+/g, '-'));
-	console.log("owner", ownerSlug)
+	console.log('owner', ownerSlug);
 </script>
 
 <main class="min-h-screen bg-[#fafbfc] p-6 font-sans text-gray-800 md:p-12 lg:px-24">

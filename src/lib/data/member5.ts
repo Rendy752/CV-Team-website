@@ -7,8 +7,7 @@ export const member5: Member = {
 	nickname: 'Rendy',
 	role: 'Programmer / FullStack Developer',
 	discipline: 'mobile',
-	avatar:
-		'/image/rendy.jpg',
+	avatar: '/image/rendy.jpg',
 	shortIntro:
 		'Recent Information Systems graduate with a proven track record of rapidly mastering complex tech stacks and business logic within fast-paced environments.',
 	email: 'rendypratama752@gmail.com',

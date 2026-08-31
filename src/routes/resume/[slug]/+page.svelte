@@ -461,7 +461,8 @@
 
 						<a
 							class="text-xs font-bold text-slate-900 transition-colors group-hover:text-indigo-600"
-							href={`/project/${project.id}`}						>
+							href={`/project/${project.id}`}
+						>
 							View Detail &rarr;
 						</a>
 					</div>

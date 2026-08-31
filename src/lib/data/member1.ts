@@ -7,8 +7,7 @@ export const member1: Member = {
 	nickname: 'Haikal',
 	role: 'Fullstack Developer',
 	discipline: 'fullstack',
-	avatar:
-		'/image/haikal.jpg',
+	avatar: '/image/haikal.jpg',
 	shortIntro:
 		'Lulusan Ilmu Komputer Universitas Diponegoro dengan pengalaman sebagai Fullstack Developer dan keahlian dalam machine learning serta pengembangan web.',
 	email: 'muhammadhaikalali68@gmail.com',

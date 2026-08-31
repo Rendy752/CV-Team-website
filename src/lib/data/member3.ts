@@ -7,8 +7,7 @@ export const member3: Member = {
 	nickname: 'Rama',
 	role: 'Fullstack Developer',
 	discipline: 'fullstack',
-	avatar:
-		'/image/fajar.jpg',
+	avatar: '/image/fajar.jpg',
 	shortIntro:
 		'Fullstack developer dengan pengalaman 2+ tahun dalam pengembangan web, backend, serta minat mendalam pada cybersecurity dan cloud infrastructure.',
 	email: 'ramafajar805@gmail.com',
