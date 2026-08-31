@@ -10,6 +10,7 @@ export const projects: ProjectData[] = [
 		duration: 'Jul 2025 - Jul 2026',
 		status: 'Ongoing',
 		owner: 'Arimbi Dwi Syabillah',
+		ownerSlug: 'arimbi-dwi-syabillah',
 		background:
 			'Research project at Smart Grow Lab Telkom University to automate leaf quality assessment.',
 		challenge: {
@@ -32,6 +33,7 @@ export const projects: ProjectData[] = [
 		duration: 'N/A',
 		status: 'Completed',
 		owner: 'Najwan Zaky',
+		ownerSlug: 'najwan-zaky',
 		background: 'Kebutuhan internal untuk digitalisasi manajemen anggota dan perhitungan HPP.',
 		challenge: {
 			title: 'Data Management',
@@ -53,6 +55,7 @@ export const projects: ProjectData[] = [
 		duration: 'N/A',
 		status: 'Completed',
 		owner: 'Najwan Zaky',
+		ownerSlug: 'najwan-zaky',
 		background:
 			'Dibutuhkan sistem untuk mempermudah penyusunan akreditasi di Politeknik Negeri Bandung.',
 		challenge: {
@@ -75,6 +78,7 @@ export const projects: ProjectData[] = [
 		duration: 'N/A',
 		status: 'In Production',
 		owner: 'Rendy Pratama',
+		ownerSlug: 'rendy-pratama',
 		background: 'Built solo to create an immersive experience for anime enthusiasts.',
 		challenge: {
 			title: 'API & Data Integration',
@@ -96,6 +100,7 @@ export const projects: ProjectData[] = [
 		duration: 'N/A',
 		status: 'Completed',
 		owner: 'Rendy Pratama',
+		ownerSlug: 'rendy-pratama',
 		background:
 			'Developed to learn TypeScript, real-time communication, and advanced integrations.',
 		challenge: {
@@ -118,6 +123,7 @@ export const projects: ProjectData[] = [
 		duration: 'N/A',
 		status: 'Completed',
 		owner: 'Rendy Pratama',
+		ownerSlug: 'rendy-pratama',
 		background: 'Developed with a team of five for a college final assignment.',
 		challenge: {
 			title: 'User Auth & Data',
@@ -139,6 +145,7 @@ export const projects: ProjectData[] = [
 		duration: 'N/A',
 		status: 'Completed',
 		owner: 'Rendy Pratama',
+		ownerSlug: 'rendy-pratama',
 		background:
 			'A solo project to deepen expertise in Laravel MVC architecture and MySQL database management.',
 		challenge: {
@@ -161,6 +168,7 @@ export const projects: ProjectData[] = [
 		duration: 'N/A',
 		status: 'Completed',
 		owner: 'Rendy Pratama',
+		ownerSlug: 'rendy-pratama',
 		background:
 			'Built solo for the final submission of Dicoding IDCamp 2023, earning a perfect 5-star rating.',
 		challenge: {
@@ -183,6 +191,7 @@ export const projects: ProjectData[] = [
 		duration: 'Feb 2025 - Aug 2025',
 		status: 'Completed',
 		owner: 'Rama Fajar Fadhillah',
+		ownerSlug: 'rama-fajar-fadhillah',
 		background:
 			'Project for PT Lazio Teknologi Bersama to build a robust ERP and charity application backend.',
 		challenge: {
@@ -205,6 +214,7 @@ export const projects: ProjectData[] = [
 		duration: 'N/A',
 		status: 'Completed',
 		owner: 'Muhammad Haikal Ali',
+		ownerSlug: 'muhammad-haikal-ali',
 		background:
 			'Undergraduate thesis project aimed at replacing manual review workflows with a data-driven security solution.',
 		challenge: {

@@ -30,7 +30,7 @@
 			</div>
 
 			<!-- Individual CV Links -->
-			<div class="space-y-3 text-left md:col-span-4">
+			<!-- <div class="space-y-3 text-left md:col-span-4">
 				<h4 class="text-xs font-bold tracking-wider text-slate-900 uppercase">
 					Curriculum Vitae Anggota
 				</h4>
@@ -49,7 +49,7 @@
 						</li>
 					{/each}
 				</ul>
-			</div>
+			</div> -->
 
 			<!-- Quick Index -->
 			<div class="space-y-3 text-left md:col-span-3">

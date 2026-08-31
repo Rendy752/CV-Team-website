@@ -34,7 +34,7 @@
 			</div>
 
 			<!-- Quick Member Faces Bar: Click to inspect CV directly -->
-			<div class="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-4 sm:p-5">
+			<!-- <div class="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-4 sm:p-5">
 				<div class="mb-3 flex items-center justify-between">
 					<span class="text-[11px] font-bold tracking-wider text-slate-500 uppercase">
 						Pilih Anggota untuk Pratinjau Cepat:
@@ -65,7 +65,7 @@
 						</button>
 					{/each}
 				</div>
-			</div>
+			</div> -->
 
 			<!-- Simple Quick Facts -->
 			<div class="grid grid-cols-2 gap-4 border-t border-slate-100 pt-2 sm:grid-cols-4">

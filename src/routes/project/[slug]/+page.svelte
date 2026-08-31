@@ -4,7 +4,6 @@
 
 	import type { PageData } from './$types';
 	import ProjectDetail from '$lib/components/ProjectDetail.svelte';
-	import Navbar from '$lib/components/Navbar.svelte';
 
 	let { data }: { data: PageData } = $props();
 	let slug = $derived(page.params.slug);
@@ -14,5 +13,4 @@
 	<title>{data.project.title} | Portfolio</title>
 </svelte:head>
 
-<Navbar currentTab="home" selectedMemberId={slug} onBackToTeam={() => goto('/')} />
 <ProjectDetail project={data.project} />

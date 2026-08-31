@@ -3,7 +3,7 @@
 	import type { Member, Discipline } from '$lib/types';
 	import Hero from '$lib/components/Hero.svelte';
 	import MemberCard from '$lib/components/MemberCard.svelte';
-	import MemberCVModal from '$lib/components/MemberCVModal.svelte';
+	// import MemberCVModal from '$lib/components/MemberCVModal.svelte';
 
 	let selectedDiscipline = $state<Discipline>('all');
 	let searchQuery = $state<string>('');
@@ -348,10 +348,10 @@
 </div>
 
 <!-- Interactive CV Quick View Modal -->
-{#if activeModalMember}
+<!-- {#if activeModalMember}
 	<MemberCVModal
 		member={activeModalMember}
 		onClose={closeMemberModal}
 		onSelectMember={(m) => (activeModalMember = m)}
 	/>
-{/if}
+{/if} -->

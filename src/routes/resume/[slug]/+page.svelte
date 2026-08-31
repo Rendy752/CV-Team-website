@@ -34,7 +34,6 @@
 	<meta name="description" content={resume.about} />
 </svelte:head>
 
-<Navbar currentTab="home" selectedMemberId={slug} onBackToTeam={() => goto('/')} />
 
 <div
 	id="member-profile-page"
@@ -50,7 +49,7 @@
 				class="group inline-flex cursor-pointer items-center text-xs font-bold text-slate-500 transition-colors hover:text-slate-900"
 			>
 				<ArrowLeft class="mr-1.5 h-4 w-4 transition-transform group-hover:-translate-x-1" />
-				<span>← Back to Our Team</span>
+				<span>← Back to to Home</span>
 			</button>
 		</div>
 
