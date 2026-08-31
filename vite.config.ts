@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import { sveltekit } from '@sveltejs/kit/vite';
-import tailwindcss from '@tailwindcss/vite';
-import { defineConfig } from 'vite';
-
-export default defineConfig({
-	plugins: [tailwindcss(), sveltekit()]
-});
-=======
 import tailwindcss from '@tailwindcss/vite';
 import adapter from '@sveltejs/adapter-auto';
 import { sveltekit } from '@sveltejs/kit/vite';
@@ -35,4 +26,3 @@ export default defineConfig({
 		noExternal: ['@lucide/svelte']
 	}
 });
->>>>>>> b32e87e6c4f150220267bfaaf0f1fd671c3498a1
