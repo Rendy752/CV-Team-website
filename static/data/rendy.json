@@ -77,6 +77,10 @@
   ],
   "projects": [
     {
+<<<<<<<<< Temporary merge branch 1
+      "id": "animevibe",
+=========
+>>>>>>>>> Temporary merge branch 2
       "slug": "4",
       "name": "AnimeVibe",
       "shortDescription": "A comprehensive Android app delivering anime recommendations, advanced filtering, episode streaming, and offline data management[cite: 4].",
@@ -155,7 +159,6 @@
         "Webpack",
         "Materialize CSS"
       ]
-
     }
   ]
 }

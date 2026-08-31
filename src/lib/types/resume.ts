@@ -1,47 +1,57 @@
 export interface LinkItem {
-	id: string;
-	name: string;
+	label: string;
 	url: string;
 }
 
 export interface WorkExperience {
-	id: number;
-	companyName: string;
-	location?: string;
-	years: string;
-	roles: string;
-	jobDesc: string[];
-	type: string;
+	id: string;
+	position: string;
+	company: string;
+	duration: string;
+	description: string;
 }
 
 export interface Education {
-	id: number;
-	title: string;
-	schoolName: string;
-	location: string;
-	years: string;
+	id: string;
+	institution: string;
+	degree: string;
+	major: string;
+	year: string;
 }
 
 export interface Activity {
-	type: string;
-	activities: string[];
+	id: string;
+	position: string;
+	organization: string;
+	duration: string;
+	description: string;
 }
 
 export interface SkillCategory {
-	type: string;
-	tools: string[];
+	category: string;
+	skills: string[];
 }
 
 export interface ProjectItem {
+	id: string;
 	slug: string;
+	name: string;
+	shortDescription: string;
+	coverImage: string | null;
 	category: string;
-	title: string;
-	status: 'Completed' | 'Beta' | 'In Progress';
-	description: string;
-	imageThumbnail: string;
+	status: string;
 	role: string;
-	techStack: string[];
 	duration: string;
+	technologies: string[];
+	contribution?: string[];
+	screenshots?: string[];
+	challenges?: {
+		challenge: string;
+		solution: string;
+	}[];
+	result?: string;
+	liveDemoUrl?: string;
+	sourceCodeUrl?: string;
 }
 
 export interface ResumeData {
