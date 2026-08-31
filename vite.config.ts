@@ -1,18 +1,18 @@
-<<<<<<< HEAD
-import { sveltekit } from '@sveltejs/kit/vite';
 import tailwindcss from '@tailwindcss/vite';
-import { defineConfig } from 'vite';
-
-export default defineConfig({
-	plugins: [tailwindcss(), sveltekit()]
-});
-=======
-import tailwindcss from '@tailwindcss/vite';
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-node';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+	server: {
+		host: '0.0.0.0',
+		port: 3000,
+		allowedHosts: true
+	},
+	preview: {
+		host: '0.0.0.0',
+		port: 3000
+	},
 	plugins: [
 		tailwindcss(),
 		sveltekit({
@@ -21,10 +21,6 @@ export default defineConfig({
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
-
-			// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-			// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-			// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 			adapter: adapter()
 		})
 	],
@@ -35,4 +31,3 @@ export default defineConfig({
 		noExternal: ['@lucide/svelte']
 	}
 });
->>>>>>> b32e87e6c4f150220267bfaaf0f1fd671c3498a1

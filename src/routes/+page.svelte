@@ -25,8 +25,8 @@
 				...m.skills.frontend,
 				...m.skills.backend,
 				...m.skills.database,
-				...m.skills.devops,
-				...m.skills.tools
+				...m.skills.tools,
+				...(m.skills.devops || [])
 			].some((s) => s.toLowerCase().includes(query));
 
 			return matchesDiscipline && (matchesName || matchesRole || matchesSkills);
@@ -41,14 +41,14 @@
 		activeModalMember = null;
 	}
 
-	let featuredProjects = $derived(allProjects.slice(0, 6));
+	let featuredProjects = $derived(allProjects);
 </script>
 
 <svelte:head>
 	<title>DevFive — Portfolio & CV Kolektif 5 Pengembang</title>
 	<meta
 		name="description"
-		content="Portofolio resmi dan Curriculum Vitae kolektif 5 insinyur perangkat lunak: Full Stack, UI/UX, Cloud, Mobile, dan AI."
+		content="Portofolio resmi dan Curriculum Vitae kolektif 5 insinyur perangkat lunak: Full Stack, IoT & AI, Cybersecurity, Mobile, dan Machine Learning."
 	/>
 </svelte:head>
 
@@ -191,7 +191,7 @@
 										<div>
 											<p class="font-bold text-slate-900">{member.name}</p>
 											<p class="text-[11px] text-slate-500">
-												{member.yearsOfExperience} Thn Pengalaman
+												{member.yearsOfExperience} Pengalaman
 											</p>
 										</div>
 									</div>
@@ -274,21 +274,21 @@
 										alt={author.name}
 										class="h-5 w-5 rounded-full object-cover"
 									/>
-									<span>{author.name}</span>
+									<span>{author.nickname || author.name.split(' ')[0]}</span>
 								</a>
 							{/if}
-							{#if proj.metrics}
+							{#if proj.category}
 								<span
 									class="rounded bg-indigo-50 border border-indigo-100 px-2 py-0.5 text-[10px] font-bold text-indigo-700"
 								>
-									{proj.metrics}
+									{proj.category}
 								</span>
 							{/if}
 						</div>
 
-						<h3 class="text-sm font-bold text-slate-900">{proj.title}</h3>
-						<p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-							{proj.description}
+						<h3 class="text-sm font-bold text-slate-900">{proj.name || proj.title}</h3>
+						<p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+							{proj.shortDescription || proj.description}
 						</p>
 					</div>
 
@@ -296,7 +296,7 @@
 						class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs"
 					>
 						<div class="flex flex-wrap gap-1">
-							{#each proj.tags.slice(0, 3) as tag}
+							{#each (proj.technologies || proj.tags || []).slice(0, 3) as tag}
 								<span
 									class="rounded bg-slate-100 px-2 py-0.5 text-[10px] text-slate-600 font-medium"
 								>
@@ -304,14 +304,14 @@
 								</span>
 							{/each}
 						</div>
-						{#if proj.github}
+						{#if proj.sourceCodeUrl || proj.github}
 							<a
-								href={proj.github}
+								href={proj.sourceCodeUrl || proj.github}
 								target="_blank"
 								rel="noreferrer"
 								class="font-semibold text-slate-900 hover:text-indigo-600"
 							>
-								GitHub &rarr;
+								Source &rarr;
 							</a>
 						{/if}
 					</div>
@@ -327,17 +327,17 @@
 		>
 			<div class="space-y-2 max-w-xl">
 				<h3 class="text-lg font-bold text-slate-900">
-					Tertarik Bekerja Sama dengan Tim Kami?
+					Tertarik Berkolaborasi dengan Tim Kami?
 				</h3>
 				<p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
 					Tim DevFive siap membantu pengembangan aplikasi web berskala tinggi,
-					perancangan antarmuka pengguna (UI/UX), arsitektur cloud backend, aplikasi
-					mobile, hingga integrasi model AI.
+					perancangan sistem IoT, backend arsitektur cloud, aplikasi mobile, serta
+					integrasi model machine learning dan computer vision.
 				</p>
 			</div>
 			<div class="flex flex-wrap items-center gap-3">
 				<a
-					href="mailto:contact@devfive.collective"
+					href="mailto:arimbidwisyabillah1304@gmail.com"
 					class="inline-flex items-center rounded-xl bg-slate-900 px-5 py-2.5 text-xs font-bold text-white shadow-2xs hover:bg-indigo-600 transition-colors"
 				>
 					Kirim Pesan / Tawaran
