@@ -11,14 +11,14 @@ export interface WorkExperience {
 	years: string;
 	roles: string;
 	jobDesc: string[];
-	type: string;
+	type?: string;
 }
 
 export interface Education {
 	id: number;
 	title: string;
 	schoolName: string;
-	location: string;
+	location?: string;
 	years: string;
 }
 

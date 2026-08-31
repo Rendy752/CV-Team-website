@@ -68,70 +68,19 @@
   ],
   "projects": [
     {
-      "id": "phishing-email-classification",
-      "name": "Knowledge Management System & Phishing Detection Dashboard",
-      "shortDescription": "Dashboard klasifikasi email berbasis machine learning untuk otomatisasi deteksi phishing dan analisis performa model.",
-      "category": "Machine Learning & Security",
-      "duration": "2025 - 2026",
+      "slug": "10",
+      "name": "Knowledge Management System",
+      "shortDescription": "Engineered a machine learning-based email classification dashboard to automate phishing detection[cite: 2].",
+      "coverImage": null,
+      "category": "Machine Learning Application",
       "status": "Completed",
+      "role": "Developer & Researcher",
+      "duration": "N/A",
       "technologies": [
         "Python",
         "Machine Learning",
-        "GUI",
-        "Data Evaluation"
-      ],
-      "role": "Researcher & Developer",
-      "contribution": [
-        "Membangun dashboard klasifikasi email berbasis machine learning untuk mengotomatisasi deteksi phishing.",
-        "Mengembangkan aplikasi GUI berbasis machine learning untuk menggantikan alur kerja manual.",
-        "Mengoptimalkan performa model dengan sistem evaluasi komparatif (Akurasi, Presisi, Recall, F1-Score) dan visualisasi confusion matrix."
-      ],
-      "coverImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
-      "screenshots": [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
-      ],
-      "challenges": [
-        {
-          "challenge": "Mengganti alur kerja manual yang lambat dalam mendeteksi email phishing.",
-          "solution": "Membangun sistem otomatisasi berbasis machine learning dengan metrik evaluasi yang transparan."
-        }
-      ],
-      "result": "Berhasil menciptakan solusi keamanan berbasis data yang efisien dan akurat.",
-      "liveDemoUrl": "",
-      "sourceCodeUrl": "https://github.com/haikalassegaf"
-    },
-    {
-      "id": "undip-community-service",
-      "name": "Diponegoro University Community Service Village Profile",
-      "shortDescription": "Aplikasi web Profil Desa berbasis WordPress untuk digitalisasi informasi komunitas dan layanan administrasi.",
-      "category": "Web Application",
-      "duration": "2025",
-      "status": "Completed",
-      "technologies": [
-        "WordPress",
-        "PHP",
-        "HTML",
-        "CMS"
-      ],
-      "role": "Web Developer",
-      "contribution": [
-        "Berpartisipasi dalam proyek pengabdian masyarakat universitas di wilayah lokal.",
-        "Mengembangkan aplikasi web Profil Desa menggunakan WordPress untuk digitalisasi informasi komunitas.",
-        "Kustomisasi modul manajemen konten dinamis termasuk profil perangkat desa, berita, dan katalog UMKM."
-      ],
-      "coverImage": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
-      "screenshots": [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
-      ],
-      "challenges": [
-        {
-          "challenge": "Meningkatkan transparansi lokal dan keterlibatan digital di area pedesaan.",
-          "solution": "Membuat platform profil desa dan direktori UMKM yang interaktif dan mudah diakses."
-        }
-      ],
-      "result": "Meningkatkan transparansi informasi dan digitalisasi layanan administratif desa.",
-      "liveDemoUrl": "",
-      "sourceCodeUrl": "https://github.com/haikalassegaf"
+        "GUI"
+      ]
     }
   ]
 }

@@ -78,15 +78,16 @@
   "projects": [
     {
       "id": "animevibe",
-      "slug": "4",
       "name": "AnimeVibe",
-      "shortDescription": "Android application for anime enthusiasts with features such as recommendations, filtering, and streaming.",
+      "shortDescription": "A comprehensive Android app delivering anime recommendations, advanced filtering, episode streaming, and offline data management[cite: 4].",
+      "coverImage": null,
       "category": "Mobile Application",
-      "duration": "2024 - 2025",
-      "status": "Completed",
+      "status": "In Production",
+      "role": "Mobile Developer",
+      "duration": "N/A",
       "technologies": [
         "Kotlin",
-        "Android",
+        "Jetpack Compose",
         "Room",
         "Retrofit",
         "Coroutines",
@@ -113,37 +114,67 @@
     },
     {
       "id": "discord-clone",
-      "slug": "5",
       "name": "Discord Clone",
-      "shortDescription": "Real-time chat platform with text, voice, and video capabilities.",
+      "shortDescription": "A feature-rich Discord Clone enhanced with real-time messaging, media sharing, and video/audio rooms[cite: 4].",
+      "coverImage": null,
       "category": "Web Application",
-      "duration": "2024 - 2025",
       "status": "Completed",
+      "role": "FullStack Developer",
+      "duration": "N/A",
       "technologies": [
         "Next.js",
         "TypeScript",
-        "Clerk",
-        "WebSockets",
-        "Socket.io"
-      ],
+        "Tailwind CSS",
+        "Socket.IO",
+        "LiveKit"
+      ]
+    },
+    {
+      "slug": "6",
+      "name": "MariBermusik Mobile",
+      "shortDescription": "A collaborative Flutter-based mobile app designed to help users learn musical instruments through materials provided by other professional users[cite: 4].",
+      "coverImage": null,
+      "category": "Mobile Application",
+      "status": "Completed",
+      "role": "Mobile Developer",
+      "duration": "N/A",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase"
+      ]
+    },
+    {
+      "slug": "7",
+      "name": "LibraryApp",
+      "shortDescription": "A Laravel based CMS for managing library books and categories with role-based access for users and admins[cite: 4].",
+      "coverImage": null,
+      "category": "Web Application",
+      "status": "Completed",
       "role": "FullStack Developer",
-      "contribution": [
-        "Built a real-time chat platform with text, voice, and video capabilities[cite: 3].",
-        "Integrated Clerk for authentication and WebSockets with Socket.io for real-time communication[cite: 3]."
-      ],
-      "coverImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
-      "screenshots": [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
-      ],
-      "challenges": [
-        {
-          "challenge": "Handling low-latency real-time voice, video, and text synchronization across multiple users.",
-          "solution": "Integrated WebSockets with Socket.io alongside Next.js and secure Clerk authentication."
-        }
-      ],
-      "result": "Created a high-performance replica of modern chat and communication software.",
-      "liveDemoUrl": "https://rendyp-portofolio.vercel.app",
-      "sourceCodeUrl": "https://github.com/"
+      "duration": "N/A",
+      "technologies": [
+        "Laravel",
+        "MySQL",
+        "Bootstrap",
+        "Chart.js"
+      ]
+    },
+    {
+      "slug": "8",
+      "name": "MealApp",
+      "shortDescription": "A meal-themed web app to enable meal exploration with category filtering and detailed recipes[cite: 4].",
+      "coverImage": null,
+      "category": "Web Application",
+      "status": "Completed",
+      "role": "FullStack Developer",
+      "duration": "N/A",
+      "technologies": [
+        "JavaScript ES6",
+        "Web Components",
+        "Webpack",
+        "Materialize CSS"
+      ]
     }
   ]
 }

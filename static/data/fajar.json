@@ -90,40 +90,21 @@
   ],
   "projects": [
     {
-      "id": "baiq-apps-laz-core",
+      "slug": "9",
       "name": "Baiq Apps & Laz Core ERP",
-      "shortDescription": "Pengembangan sistem microservices enterprise untuk layanan pembayaran, ziswaf, qurban, dan manajemen ERP.",
-      "category": "Enterprise Web Application",
-      "duration": "Feb 2025 - Agt 2025",
+      "shortDescription": "Developed microservices such as payment services, notification services, ziswaf services, qurban services, and partnership services[cite: 1].",
+      "coverImage": null,
+      "category": "Microservices Ecosystem",
       "status": "Completed",
+      "role": "Backend Developer",
+      "duration": "Feb 2025 - Aug 2025",
       "technologies": [
-        "PHP",
-        "Laravel",
+        "PHP (Laravel)",
         "Golang",
         "AWS RDS",
-        "AWS EC2",
         "Kubernetes",
-        "Argo CD"
-      ],
-      "role": "Backend Developer",
-      "contribution": [
-        "Mengembangkan microservices mencakup payment, notification, ziswaf, qurban, dan partnership services.",
-        "Mengintegrasikan Doku & Xendit payment gateways untuk sistem zakat, infaq, shadaqah, wakaf, dan qurban.",
-        "Melakukan deployment service ke server menggunakan Argo CD dan Kubernetes."
-      ],
-      "coverImage": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
-      "screenshots": [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
-      ],
-      "challenges": [
-        {
-          "challenge": "Mengintegrasikan berbagai layanan pembayaran pihak ketiga dan menyelaraskan arsitektur microservices yang kompleks.",
-          "solution": "Menerapkan standarisasi versi semantik, dokumentasi API yang jelas, serta orkestrasi deployment otomatis dengan Argo CD dan K8s."
-        }
-      ],
-      "result": "Berhasil meluncurkan layanan digital zakat dan ERP yang terintegrasi secara aman dan scalable.",
-      "liveDemoUrl": "https://www.ramafajar.my.id/projects",
-      "sourceCodeUrl": "https://github.com/nullsec45"
+        "RabbitMQ"
+      ]
     }
   ]
 }
