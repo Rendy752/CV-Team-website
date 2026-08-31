@@ -32,6 +32,19 @@ export interface SkillCategory {
 	tools: string[];
 }
 
+export interface ProjectItem {
+	id: string;
+	category: string;
+	title: string;
+	status: 'Completed' | 'Beta' | 'In Progress';
+	description: string;
+	imageThumbnail: string;
+	role: string;
+	techStack: string[];
+	duration: string;
+	caseStudyUrl?: string;
+}
+
 export interface ResumeData {
 	slug: string;
 	name: string;
@@ -46,4 +59,5 @@ export interface ResumeData {
 	educations: Education[];
 	additionalActivities: Activity[];
 	skills: SkillCategory[];
+	projects: ProjectItem[];
 }

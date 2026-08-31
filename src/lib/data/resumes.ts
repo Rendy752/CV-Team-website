@@ -76,6 +76,47 @@ export const RESUMES: ResumeData[] = [
 			{ type: 'Backend', tools: ['Node.js', 'NestJS', 'PHP', 'Laravel'] },
 			{ type: 'Database', tools: ['PostgreSQL', 'MySQL', 'Redis'] },
 			{ type: 'Others', tools: ['TypeScript', 'Docker', 'Nginx', 'Git'] }
+		],
+		projects: [
+			{
+				id: 'campus-accreditation',
+				category: 'ENTERPRISE WEB APPLICATION',
+				title: 'Campus Accreditation System',
+				status: 'Completed',
+				description:
+					'An enterprise-grade web application for university accreditation compliance, audit management, and automated document generation.',
+				imageThumbnail: '/images/projects/campus.jpg',
+				role: 'Full Stack Architect & Database Designer',
+				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
+				duration: '6 Months',
+				caseStudyUrl: '#'
+			},
+			{
+				id: 'campuss-accreditation',
+				category: 'ENTERPRISE WEB APPLICATION',
+				title: 'Campus Accreditation System',
+				status: 'Completed',
+				description:
+					'An enterprise-grade web application for university accreditation compliance, audit management, and automated document generation.',
+				imageThumbnail: '/images/projects/campus.jpg',
+				role: 'Full Stack Architect & Database Designer',
+				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
+				duration: '6 Months',
+				caseStudyUrl: '#'
+			},
+			{
+				id: 'smart-energy-grid',
+				category: 'INDUSTRIAL IOT DASHBOARD',
+				title: 'Smart Energy Grid Monitor',
+				status: 'Beta',
+				description:
+					'Real-time telemetry and management portal for industrial electrical distribution networks, highlighting anomalous consumption.',
+				imageThumbnail: '/images/projects/energy.jpg',
+				role: 'Backend & Telemetry Pipeline Developer',
+				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
+				duration: '4 Months',
+				caseStudyUrl: '#'
+			}
 		]
 	},
 	// 4 profil mock lainnya
@@ -110,7 +151,35 @@ export const RESUMES: ResumeData[] = [
 		additionalActivities: [
 			{ type: 'Mentorship', activities: ['Mentoring 100+ students in frontend fundamentals'] }
 		],
-		skills: [{ type: 'Frontend', tools: ['SvelteKit', 'Tailwind CSS', 'TypeScript', 'Vite'] }]
+		skills: [{ type: 'Frontend', tools: ['SvelteKit', 'Tailwind CSS', 'TypeScript', 'Vite'] }],
+		projects: [
+			{
+				id: 'campus-accreditation',
+				category: 'ENTERPRISE WEB APPLICATION',
+				title: 'Campus Accreditation System',
+				status: 'Completed',
+				description:
+					'An enterprise-grade web application for university accreditation compliance, audit management, and automated document generation.',
+				imageThumbnail: '/images/projects/campus.jpg',
+				role: 'Full Stack Architect & Database Designer',
+				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
+				duration: '6 Months',
+				caseStudyUrl: '#'
+			},
+			{
+				id: 'smart-energy-grid',
+				category: 'INDUSTRIAL IOT DASHBOARD',
+				title: 'Smart Energy Grid Monitor',
+				status: 'Beta',
+				description:
+					'Real-time telemetry and management portal for industrial electrical distribution networks, highlighting anomalous consumption.',
+				imageThumbnail: '/images/projects/energy.jpg',
+				role: 'Backend & Telemetry Pipeline Developer',
+				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
+				duration: '4 Months',
+				caseStudyUrl: '#'
+			}
+		]
 	},
 	{
 		slug: 'sarah-amanda',
@@ -124,7 +193,35 @@ export const RESUMES: ResumeData[] = [
 		workExperiences: [],
 		educations: [],
 		additionalActivities: [],
-		skills: [{ type: 'Design & Code', tools: ['Figma', 'TailwindCSS', 'HTML/CSS Semantics'] }]
+		skills: [{ type: 'Design & Code', tools: ['Figma', 'TailwindCSS', 'HTML/CSS Semantics'] }],
+		projects: [
+			{
+				id: 'campus-accreditation',
+				category: 'ENTERPRISE WEB APPLICATION',
+				title: 'Campus Accreditation System',
+				status: 'Completed',
+				description:
+					'An enterprise-grade web application for university accreditation compliance, audit management, and automated document generation.',
+				imageThumbnail: '/images/projects/campus.jpg',
+				role: 'Full Stack Architect & Database Designer',
+				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
+				duration: '6 Months',
+				caseStudyUrl: '#'
+			},
+			{
+				id: 'smart-energy-grid',
+				category: 'INDUSTRIAL IOT DASHBOARD',
+				title: 'Smart Energy Grid Monitor',
+				status: 'Beta',
+				description:
+					'Real-time telemetry and management portal for industrial electrical distribution networks, highlighting anomalous consumption.',
+				imageThumbnail: '/images/projects/energy.jpg',
+				role: 'Backend & Telemetry Pipeline Developer',
+				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
+				duration: '4 Months',
+				caseStudyUrl: '#'
+			}
+		]
 	},
 	{
 		slug: 'budi-santoso',
@@ -138,7 +235,35 @@ export const RESUMES: ResumeData[] = [
 		workExperiences: [],
 		educations: [],
 		additionalActivities: [],
-		skills: [{ type: 'DevOps', tools: ['Docker', 'Kubernetes', 'Linux', 'CI/CD'] }]
+		skills: [{ type: 'DevOps', tools: ['Docker', 'Kubernetes', 'Linux', 'CI/CD'] }],
+		projects: [
+			{
+				id: 'campus-accreditation',
+				category: 'ENTERPRISE WEB APPLICATION',
+				title: 'Campus Accreditation System',
+				status: 'Completed',
+				description:
+					'An enterprise-grade web application for university accreditation compliance, audit management, and automated document generation.',
+				imageThumbnail: '/images/projects/campus.jpg',
+				role: 'Full Stack Architect & Database Designer',
+				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
+				duration: '6 Months',
+				caseStudyUrl: '#'
+			},
+			{
+				id: 'smart-energy-grid',
+				category: 'INDUSTRIAL IOT DASHBOARD',
+				title: 'Smart Energy Grid Monitor',
+				status: 'Beta',
+				description:
+					'Real-time telemetry and management portal for industrial electrical distribution networks, highlighting anomalous consumption.',
+				imageThumbnail: '/images/projects/energy.jpg',
+				role: 'Backend & Telemetry Pipeline Developer',
+				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
+				duration: '4 Months',
+				caseStudyUrl: '#'
+			}
+		]
 	},
 	{
 		slug: 'dina-lestari',
@@ -152,6 +277,34 @@ export const RESUMES: ResumeData[] = [
 		workExperiences: [],
 		educations: [],
 		additionalActivities: [],
-		skills: [{ type: 'Analytics', tools: ['SQL', 'PostgreSQL', 'Python', 'Tableau'] }]
+		skills: [{ type: 'Analytics', tools: ['SQL', 'PostgreSQL', 'Python', 'Tableau'] }],
+		projects: [
+			{
+				id: 'campus-accreditation',
+				category: 'ENTERPRISE WEB APPLICATION',
+				title: 'Campus Accreditation System',
+				status: 'Completed',
+				description:
+					'An enterprise-grade web application for university accreditation compliance, audit management, and automated document generation.',
+				imageThumbnail: '/images/projects/campus.jpg',
+				role: 'Full Stack Architect & Database Designer',
+				techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
+				duration: '6 Months',
+				caseStudyUrl: '#'
+			},
+			{
+				id: 'smart-energy-grid',
+				category: 'INDUSTRIAL IOT DASHBOARD',
+				title: 'Smart Energy Grid Monitor',
+				status: 'Beta',
+				description:
+					'Real-time telemetry and management portal for industrial electrical distribution networks, highlighting anomalous consumption.',
+				imageThumbnail: '/images/projects/energy.jpg',
+				role: 'Backend & Telemetry Pipeline Developer',
+				techStack: ['React', 'Node.js', 'TimescaleDB', 'Tailwind CSS', 'MQTT'],
+				duration: '4 Months',
+				caseStudyUrl: '#'
+			}
+		]
 	}
 ];
