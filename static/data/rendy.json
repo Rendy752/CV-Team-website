@@ -78,6 +78,7 @@
   "projects": [
     {
       "id": "animevibe",
+      "slug": "4",
       "name": "AnimeVibe",
       "shortDescription": "Android application for anime enthusiasts with features such as recommendations, filtering, and streaming.",
       "category": "Mobile Application",
@@ -112,6 +113,7 @@
     },
     {
       "id": "discord-clone",
+      "slug": "5",
       "name": "Discord Clone",
       "shortDescription": "Real-time chat platform with text, voice, and video capabilities.",
       "category": "Web Application",

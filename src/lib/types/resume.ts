@@ -33,7 +33,7 @@ export interface SkillCategory {
 }
 
 export interface ProjectItem {
-	id: string;
+	slug: string;
 	category: string;
 	title: string;
 	status: 'Completed' | 'Beta' | 'In Progress';
@@ -42,7 +42,6 @@ export interface ProjectItem {
 	role: string;
 	techStack: string[];
 	duration: string;
-	caseStudyUrl?: string;
 }
 
 export interface ResumeData {

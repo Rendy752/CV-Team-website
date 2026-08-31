@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { resolve, resolveRoute } from '$app/paths';
 	import { page } from '$app/state';
 	import { fade, fly } from 'svelte/transition';
 	import {
@@ -29,7 +30,7 @@
 <Navbar
 	currentTab="home"
 	selectedMemberId={slug}
-	onBackToTeam={() => goto('/')}
+	onBackToTeam={() => goto(resolve('/'))}
 />
 
 <div id="member-profile-page" class="min-h-screen bg-slate-50 py-8 lg:py-12 space-y-16" in:fade={{ duration: 200 }}>
@@ -40,7 +41,7 @@
 		<!-- Back Button -->
 		<div class="mb-6">
 			<button
-				onclick={() => goto('/')}
+				onclick={() => goto(resolve('/'))}
 				class="group inline-flex cursor-pointer items-center text-xs font-bold text-slate-500 transition-colors hover:text-slate-900"
 			>
 				<ArrowLeft class="mr-1.5 h-4 w-4 transition-transform group-hover:-translate-x-1" />
@@ -143,7 +144,7 @@
 						<div class="pt-2">
 							<span class="mb-2 block font-bold text-slate-800">My Top Core Interests:</span>
 							<div class="flex flex-wrap gap-2">
-								{#each resume.aboutMe.interests as interest}
+								{#each resume.aboutMe.interests as interest (interest)}
 									<span class="rounded-full border border-slate-100 bg-white px-2.5 py-1 font-semibold text-slate-600 shadow-sm">
 										{interest}
 									</span>
@@ -165,9 +166,9 @@
 						<h2 class="text-xl font-bold tracking-tight">Professional Experience</h2>
 					</div>
 					<div class="relative space-y-8 border-l-2 border-slate-200 pl-6">
-						{#each resume.experience as exp}
+						{#each resume.experience as exp (exp)}
 							<div class="relative">
-								<div class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-slate-50 bg-indigo-600 shadow-sm"></div>
+								<div class="absolute -left-7.75 top-1.5 h-3 w-3 rounded-full border-2 border-slate-50 bg-indigo-600 shadow-sm"></div>
 								<div class="space-y-1.5">
 									<div class="flex flex-col gap-y-1 sm:flex-row sm:items-center sm:justify-between">
 										<h3 class="text-sm font-bold text-slate-900">{exp.position}</h3>
@@ -188,9 +189,9 @@
 						<h2 class="text-xl font-bold tracking-tight">Education Background</h2>
 					</div>
 					<div class="relative space-y-8 border-l-2 border-slate-200 pl-6">
-						{#each resume.education as edu}
+						{#each resume.education as edu (edu)}
 							<div class="relative">
-								<div class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-slate-50 bg-emerald-500 shadow-sm"></div>
+								<div class="absolute -left-7.75 top-1.5 h-3 w-3 rounded-full border-2 border-slate-50 bg-emerald-500 shadow-sm"></div>
 								<div class="space-y-1.5">
 									<div class="flex flex-col gap-y-1 sm:flex-row sm:items-center sm:justify-between">
 										<h3 class="text-sm font-bold text-slate-900">{edu.institution}</h3>
@@ -222,8 +223,8 @@
 								Frontend
 							</span>
 							<div class="flex flex-wrap gap-1.5">
-								{#each resume.skills.frontend as s}
-									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{s}</span>
+								{#each resume.skills.frontend as fr (fr)}
+									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{fr}</span>
 								{/each}
 							</div>
 						</div>
@@ -237,8 +238,8 @@
 								Backend
 							</span>
 							<div class="flex flex-wrap gap-1.5">
-								{#each resume.skills.backend as s}
-									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{s}</span>
+								{#each resume.skills.backend as ba (ba)}
+									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{ba}</span>
 								{/each}
 							</div>
 						</div>
@@ -252,8 +253,8 @@
 								Database
 							</span>
 							<div class="flex flex-wrap gap-1.5">
-								{#each resume.skills.database as s}
-									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{s}</span>
+								{#each resume.skills.database as db (db)}
+									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{db}</span>
 								{/each}
 							</div>
 						</div>
@@ -267,8 +268,8 @@
 								Tools & Services
 							</span>
 							<div class="flex flex-wrap gap-1.5">
-								{#each resume.skills.tools as s}
-									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{s}</span>
+								{#each resume.skills.tools as to (to)}
+									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{to}</span>
 								{/each}
 							</div>
 						</div>
@@ -303,7 +304,10 @@
 
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
 			{#each resume.projects as project (project.id)}
-				<div class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-100 bg-white text-left shadow-sm transition-all hover:border-indigo-200 hover:shadow-xl">
+				<a
+					href={resolveRoute('/project/[slug]', { slug: project.slug })}
+					class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-100 bg-white text-left shadow-sm transition-all hover:border-indigo-200 hover:shadow-xl"
+				>
 
 					<!-- Cover Image -->
 					<div class="relative h-56 w-full overflow-hidden border-b border-slate-100 bg-slate-100">
@@ -340,7 +344,7 @@
 						</div>
 
 						<div class="flex flex-wrap gap-1.5 pt-1">
-							{#each project.technologies as tech}
+							{#each project.technologies as tech (tech)}
 								<span class="rounded border border-slate-100 bg-white px-2 py-0.5 text-[9px] font-semibold text-slate-600 shadow-sm">
 									{tech}
 								</span>
@@ -371,7 +375,7 @@
 							</a>
 						{/if}
 					</div>
-				</div>
+				</a>
 			{:else}
 				<div class="col-span-2 rounded-2xl border-2 border-dashed border-slate-200 py-12 text-center">
 					<p class="text-sm text-slate-400">Belum ada project yang ditambahkan.</p>
