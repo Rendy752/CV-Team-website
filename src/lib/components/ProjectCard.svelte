@@ -69,14 +69,16 @@
 		</div>
 	</div>
 
-  <!-- Footer Link & Duration -->
-  <div class="px-5 sm:px-6 py-4 border-t border-slate-100 flex justify-between items-center bg-slate-50/50 text-xs">
-    <span class="text-slate-400">Duration: {project.duration}</span>
-    <a 
-      href={project.slug || '#'} 
-      class="font-bold text-slate-900 hover:text-indigo-600 flex items-center gap-1 transition-colors"
-    >
-      View Case Study <span aria-hidden="true">&rarr;</span>
-    </a>
-  </div>
+	<!-- Footer Link & Duration -->
+	<div
+		class="flex items-center justify-between border-t border-slate-100 bg-slate-50/50 px-5 py-4 text-xs sm:px-6"
+	>
+		<span class="text-slate-400">Duration: {project.duration}</span>
+		<a
+			href={project.slug || '#'}
+			class="flex items-center gap-1 font-bold text-slate-900 transition-colors hover:text-indigo-600"
+		>
+			View Case Study <span aria-hidden="true">&rarr;</span>
+		</a>
+	</div>
 </article>

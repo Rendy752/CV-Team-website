@@ -5,7 +5,7 @@
 </script>
 
 <main class="min-h-screen bg-[#fafbfc] p-6 font-sans text-gray-800 md:p-12 lg:px-24">
-		<header class="mx-auto max-w-7xl space-y-6">
+	<header class="mx-auto max-w-7xl space-y-6">
 		<div class="flex flex-wrap items-center justify-between text-sm font-medium text-gray-500">
 			<a href="#" class="border-b border-gray-400 pb-0.5 transition-colors hover:text-gray-800">
 				&larr; Back to Member Profile

@@ -14,8 +14,7 @@
 
 	let filteredMembers = $derived(
 		membersList.filter((m) => {
-			const matchesDiscipline =
-				selectedDiscipline === 'all' || m.discipline === selectedDiscipline;
+			const matchesDiscipline = selectedDiscipline === 'all' || m.discipline === selectedDiscipline;
 			const query = searchQuery.trim().toLowerCase();
 			if (!query) return matchesDiscipline;
 
@@ -57,21 +56,19 @@
 	<Hero onSelectMember={openMemberModal} />
 
 	<!-- Main Team Section -->
-	<section id="section-team-directory" class="mx-auto max-w-6xl px-4 sm:px-6 text-left space-y-6">
+	<section id="section-team-directory" class="mx-auto max-w-6xl space-y-6 px-4 text-left sm:px-6">
 		<!-- Section Header & Filter Controls -->
 		<div
-			class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end border-b border-slate-200/80 pb-5"
+			class="flex flex-col justify-between gap-4 border-b border-slate-200/80 pb-5 sm:flex-row sm:items-end"
 		>
 			<div>
 				<div
-					class="inline-flex items-center space-x-2 text-indigo-600 text-xs font-bold uppercase tracking-wider mb-1"
+					class="mb-1 inline-flex items-center space-x-2 text-xs font-bold tracking-wider text-indigo-600 uppercase"
 				>
 					<span class="h-2 w-2 rounded-full bg-indigo-600"></span>
 					<span>Direktori Tim</span>
 				</div>
-				<h2 class="text-2xl font-bold tracking-tight text-slate-900">
-					5 Anggota & Spesialisasi
-				</h2>
+				<h2 class="text-2xl font-bold tracking-tight text-slate-900">5 Anggota & Spesialisasi</h2>
 			</div>
 
 			<!-- Search & View Mode Switcher -->
@@ -168,7 +165,7 @@
 			<div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-2xs">
 				<table class="w-full text-left text-xs">
 					<thead
-						class="border-b border-slate-200 bg-slate-50/80 text-[11px] font-bold uppercase tracking-wider text-slate-500"
+						class="border-b border-slate-200 bg-slate-50/80 text-[11px] font-bold tracking-wider text-slate-500 uppercase"
 					>
 						<tr>
 							<th class="px-5 py-3.5">Nama & Profil</th>
@@ -180,7 +177,7 @@
 					</thead>
 					<tbody class="divide-y divide-slate-100">
 						{#each filteredMembers as member}
-							<tr class="hover:bg-slate-50/80 transition-colors">
+							<tr class="transition-colors hover:bg-slate-50/80">
 								<td class="px-5 py-4">
 									<div class="flex items-center space-x-3">
 										<img
@@ -241,11 +238,14 @@
 	</section>
 
 	<!-- Featured Projects Section -->
-	<section id="section-featured-projects" class="mx-auto max-w-6xl px-4 sm:px-6 text-left space-y-6 pt-6">
+	<section
+		id="section-featured-projects"
+		class="mx-auto max-w-6xl space-y-6 px-4 pt-6 text-left sm:px-6"
+	>
 		<div class="flex items-center justify-between border-b border-slate-200/80 pb-4">
 			<div>
 				<div
-					class="inline-flex items-center space-x-2 text-indigo-600 text-xs font-bold uppercase tracking-wider mb-1"
+					class="mb-1 inline-flex items-center space-x-2 text-xs font-bold tracking-wider text-indigo-600 uppercase"
 				>
 					<span class="h-2 w-2 rounded-full bg-indigo-600"></span>
 					<span>Portofolio Proyek</span>
@@ -260,7 +260,7 @@
 			{#each featuredProjects as proj}
 				{@const author = membersList.find((m) => m.id === proj.authorId)}
 				<div
-					class="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-2xs hover:border-slate-300 transition-all"
+					class="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-2xs transition-all hover:border-slate-300"
 				>
 					<div class="space-y-3">
 						<div class="flex items-center justify-between gap-2">
@@ -279,7 +279,7 @@
 							{/if}
 							{#if proj.category}
 								<span
-									class="rounded bg-indigo-50 border border-indigo-100 px-2 py-0.5 text-[10px] font-bold text-indigo-700"
+									class="rounded border border-indigo-100 bg-indigo-50 px-2 py-0.5 text-[10px] font-bold text-indigo-700"
 								>
 									{proj.category}
 								</span>
@@ -287,18 +287,18 @@
 						</div>
 
 						<h3 class="text-sm font-bold text-slate-900">{proj.name || proj.title}</h3>
-						<p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+						<p class="line-clamp-3 text-xs leading-relaxed text-slate-600">
 							{proj.shortDescription || proj.description}
 						</p>
 					</div>
 
 					<div
-						class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs"
+						class="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 text-xs"
 					>
 						<div class="flex flex-wrap gap-1">
 							{#each (proj.technologies || proj.tags || []).slice(0, 3) as tag}
 								<span
-									class="rounded bg-slate-100 px-2 py-0.5 text-[10px] text-slate-600 font-medium"
+									class="rounded bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-600"
 								>
 									{tag}
 								</span>
@@ -321,24 +321,22 @@
 	</section>
 
 	<!-- Simple Callout / About Collective -->
-	<section class="mx-auto max-w-6xl px-4 sm:px-6 pb-12 text-left">
+	<section class="mx-auto max-w-6xl px-4 pb-12 text-left sm:px-6">
 		<div
-			class="rounded-2xl border border-slate-200 bg-slate-50/80 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+			class="flex flex-col items-start justify-between gap-6 rounded-2xl border border-slate-200 bg-slate-50/80 p-6 sm:flex-row sm:items-center sm:p-8"
 		>
-			<div class="space-y-2 max-w-xl">
-				<h3 class="text-lg font-bold text-slate-900">
-					Tertarik Berkolaborasi dengan Tim Kami?
-				</h3>
-				<p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-					Tim DevFive siap membantu pengembangan aplikasi web berskala tinggi,
-					perancangan sistem IoT, backend arsitektur cloud, aplikasi mobile, serta
-					integrasi model machine learning dan computer vision.
+			<div class="max-w-xl space-y-2">
+				<h3 class="text-lg font-bold text-slate-900">Tertarik Berkolaborasi dengan Tim Kami?</h3>
+				<p class="text-xs leading-relaxed font-normal text-slate-600 sm:text-sm">
+					Tim DevFive siap membantu pengembangan aplikasi web berskala tinggi, perancangan sistem
+					IoT, backend arsitektur cloud, aplikasi mobile, serta integrasi model machine learning dan
+					computer vision.
 				</p>
 			</div>
 			<div class="flex flex-wrap items-center gap-3">
 				<a
 					href="mailto:arimbidwisyabillah1304@gmail.com"
-					class="inline-flex items-center rounded-xl bg-slate-900 px-5 py-2.5 text-xs font-bold text-white shadow-2xs hover:bg-indigo-600 transition-colors"
+					class="inline-flex items-center rounded-xl bg-slate-900 px-5 py-2.5 text-xs font-bold text-white shadow-2xs transition-colors hover:bg-indigo-600"
 				>
 					Kirim Pesan / Tawaran
 				</a>

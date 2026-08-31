@@ -27,12 +27,6 @@
 	<meta name="description" content={resume.shortIntro} />
 </svelte:head>
 
-<Navbar
-	currentTab="home"
-	selectedMemberId={slug}
-	onBackToTeam={() => goto(resolve('/'))}
-/>
-
 <div
 	id="member-profile-page"
 	class="min-h-screen space-y-16 bg-slate-50 py-8 lg:py-12"
@@ -160,7 +154,9 @@
 							<span class="mb-2 block font-bold text-slate-800">My Top Core Interests:</span>
 							<div class="flex flex-wrap gap-2">
 								{#each resume.aboutMe.interests as interest (interest)}
-									<span class="rounded-full border border-slate-100 bg-white px-2.5 py-1 font-semibold text-slate-600 shadow-sm">
+									<span
+										class="rounded-full border border-slate-100 bg-white px-2.5 py-1 font-semibold text-slate-600 shadow-sm"
+									>
 										{interest}
 									</span>
 								{/each}
@@ -183,7 +179,9 @@
 					<div class="relative space-y-8 border-l-2 border-slate-200 pl-6">
 						{#each resume.experience as exp (exp)}
 							<div class="relative">
-								<div class="absolute -left-7.75 top-1.5 h-3 w-3 rounded-full border-2 border-slate-50 bg-indigo-600 shadow-sm"></div>
+								<div
+									class="absolute top-1.5 -left-7.75 h-3 w-3 rounded-full border-2 border-slate-50 bg-indigo-600 shadow-sm"
+								></div>
 								<div class="space-y-1.5">
 									<div class="flex flex-col gap-y-1 sm:flex-row sm:items-center sm:justify-between">
 										<h3 class="text-sm font-bold text-slate-900">{exp.position}</h3>
@@ -210,7 +208,9 @@
 					<div class="relative space-y-8 border-l-2 border-slate-200 pl-6">
 						{#each resume.education as edu (edu)}
 							<div class="relative">
-								<div class="absolute -left-7.75 top-1.5 h-3 w-3 rounded-full border-2 border-slate-50 bg-emerald-500 shadow-sm"></div>
+								<div
+									class="absolute top-1.5 -left-7.75 h-3 w-3 rounded-full border-2 border-slate-50 bg-emerald-500 shadow-sm"
+								></div>
 								<div class="space-y-1.5">
 									<div class="flex flex-col gap-y-1 sm:flex-row sm:items-center sm:justify-between">
 										<h3 class="text-sm font-bold text-slate-900">{edu.institution}</h3>
@@ -245,7 +245,10 @@
 							</span>
 							<div class="flex flex-wrap gap-1.5">
 								{#each resume.skills.frontend as fr (fr)}
-									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{fr}</span>
+									<span
+										class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600"
+										>{fr}</span
+									>
 								{/each}
 							</div>
 						</div>
@@ -260,7 +263,10 @@
 							</span>
 							<div class="flex flex-wrap gap-1.5">
 								{#each resume.skills.backend as ba (ba)}
-									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{ba}</span>
+									<span
+										class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600"
+										>{ba}</span
+									>
 								{/each}
 							</div>
 						</div>
@@ -275,7 +281,10 @@
 							</span>
 							<div class="flex flex-wrap gap-1.5">
 								{#each resume.skills.database as db (db)}
-									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{db}</span>
+									<span
+										class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600"
+										>{db}</span
+									>
 								{/each}
 							</div>
 						</div>
@@ -290,7 +299,10 @@
 							</span>
 							<div class="flex flex-wrap gap-1.5">
 								{#each resume.skills.tools as to (to)}
-									<span class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">{to}</span>
+									<span
+										class="rounded border border-slate-100 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600"
+										>{to}</span
+									>
 								{/each}
 							</div>
 						</div>
@@ -334,7 +346,6 @@
 					href={resolveRoute('/project/[slug]', { slug: project.slug })}
 					class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-100 bg-white text-left shadow-sm transition-all hover:border-indigo-200 hover:shadow-xl"
 				>
-
 					<!-- Cover Image -->
 					<div class="relative h-56 w-full overflow-hidden border-b border-slate-100 bg-slate-100">
 						<img
@@ -377,7 +388,9 @@
 
 						<div class="flex flex-wrap gap-1.5 pt-1">
 							{#each project.technologies as tech (tech)}
-								<span class="rounded border border-slate-100 bg-white px-2 py-0.5 text-[9px] font-semibold text-slate-600 shadow-sm">
+								<span
+									class="rounded border border-slate-100 bg-white px-2 py-0.5 text-[9px] font-semibold text-slate-600 shadow-sm"
+								>
 									{tech}
 								</span>
 							{/each}
@@ -392,12 +405,11 @@
 							Duration: {project.duration}
 						</span>
 
-						<a
-							href={`/project/${project.slug}`}
-							class="cursor-pointer text-xs font-bold text-slate-900 transition-colors group-hover:text-indigo-600"
+						<span
+							class="text-xs font-bold text-slate-900 transition-colors group-hover:text-indigo-600"
 						>
 							View Detail &rarr;
-						</a>
+						</span>
 					</div>
 				</a>
 			{:else}
@@ -409,5 +421,4 @@
 			{/each}
 		</div>
 	</div>
-
 </div>

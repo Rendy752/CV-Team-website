@@ -14,5 +14,4 @@
 	<title>{data.project.title} | Portfolio</title>
 </svelte:head>
 
-<Navbar currentTab="home" selectedMemberId={slug} onBackToTeam={() => goto('/')} />
 <ProjectDetail project={data.project} />
