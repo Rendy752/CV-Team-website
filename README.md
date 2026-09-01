@@ -1,42 +1,77 @@
-# sv
+# DevFive — Team CV Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern, responsive portfolio and resume web application built for the **DevFive** 5-member team. The project showcases member profiles, individual detailed CVs, and shared projects using SvelteKit.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 👥 Meet the Team
 
-```sh
-# create a new project
-npx sv create my-app
-```
+| Member | Role / Profile Data | Route |
+| :--- | :--- | :--- |
+| **Arimbi** | Member 1 | `/resume/arimbi` |
+| **Fajar** | Member 2 | `/resume/fajar` |
+| **Haikal** | Member 3 | `/resume/haikal` |
+| **Najwan** | Member 4 | `/resume/najwan` |
+| **Rendy** | Member 5 | `/resume/rendy` |
 
-To recreate this project with the same configuration:
+---
 
-```sh
-# recreate this project
-npx sv@0.17.0 create --template minimal --types ts --add eslint prettier tailwindcss="plugins:typography,forms" --install npm group-portofolio
-```
+## 🛠 Tech Stack
 
-## Developing
+* **Framework:** [SvelteKit](https://kit.svelte.dev/)
+* **Language:** TypeScript / JavaScript
+* **Styling:** Tailwind CSS
+* **Package Manager:** Bun / npm
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+---
 
-```sh
-npm run dev
+## 📁 File Structure
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```text
+CV-Team-website/
+├── .vscode/                     # VSCode workspace configurations
+├── src/
+│   ├── data/                    # Legacy / initial member and team datasets
+│   │   ├── member[1-5].ts
+│   │   ├── team.ts
+│   │   └── types.ts
+│   ├── lib/
+│   │   ├── components/          # Reusable Svelte UI components
+│   │   │   ├── Footer.svelte
+│   │   │   ├── Hero.svelte
+│   │   │   ├── MemberCard.svelte
+│   │   │   ├── MemberCVModal.svelte
+│   │   │   ├── Navbar.svelte
+│   │   │   └── ProjectDetail.svelte
+│   │   ├── data/                # Data stores for team, resumes, and projects
+│   │   │   ├── member[1-5].ts
+│   │   │   ├── projects.ts
+│   │   │   ├── resumes.ts
+│   │   │   └── team.ts
+│   │   └── types/               # TypeScript type definitions
+│   │       └── resume.ts
+│   └── routes/                  # SvelteKit application routes & API endpoints
+│       ├── api/                 # Internal API endpoints
+│       │   ├── project/[slug]/
+│       │   └── resume/[slug]/
+│       ├── project/[slug]/      # Project details page
+│       ├── resume/[slug]/       # Individual member CV page
+│       ├── +layout.svelte       # Root application layout
+│       └── +page.svelte         # Home landing page
+├── static/
+│   ├── data/                    # Static JSON resume schemas
+│   │   ├── arimbi.json
+│   │   ├── fajar.json
+│   │   ├── haikal.json
+│   │   ├── najwan.json
+│   │   └── rendy.json
+│   └── image/                   # Member avatars and team media
+│       ├── arimbi.jpg
+│       ├── fajar.jpg
+│       ├── haikal.jpg
+│       ├── najwan.jpg
+│       └── rendy.jpg
+├── .env.example                 # Sample environment configuration
+├── eslint.config.js             # ESLint configuration
+├── package.json                 # Project dependencies and run scripts
+└── prettier.config.js           # Code formatting rules
