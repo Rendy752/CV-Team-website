@@ -73,7 +73,7 @@
 	<!-- Footer Action -->
 	<div class="mt-5 flex items-center justify-between gap-2 border-t border-slate-100 pt-3">
 		<a
-			href="/resume/{member.id}"
+			href="/resume/{member.slug || member.id}"
 			class="text-xs font-semibold text-slate-500 transition-colors hover:text-slate-900"
 		>
 			Buka Resume &rarr;
