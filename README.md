@@ -1,77 +1,52 @@
-# DevFive — Team CV Website
+# DevFive — Team Profile & Portfolio Platform
 
-A modern, responsive portfolio and resume web application built for the **DevFive** 5-member team. The project showcases member profiles, individual detailed CVs, and shared projects using SvelteKit.
+**DevFive** is a shared portfolio and curriculum vitae (CV) web application designed to highlight the profiles, technical skill sets, experience, and projects of all five team members. 
 
----
-
-## 👥 Meet the Team
-
-| Member | Role / Profile Data | Route |
-| :--- | :--- | :--- |
-| **Arimbi** | Member 1 | `/resume/arimbi` |
-| **Fajar** | Member 2 | `/resume/fajar` |
-| **Haikal** | Member 3 | `/resume/haikal` |
-| **Najwan** | Member 4 | `/resume/najwan` |
-| **Rendy** | Member 5 | `/resume/rendy` |
+**Live Demo:** [https://cv-team-website.vercel.app](https://cv-team-website.vercel.app)
 
 ---
 
-## 🛠 Tech Stack
-
-* **Framework:** [SvelteKit](https://kit.svelte.dev/)
-* **Language:** TypeScript / JavaScript
-* **Styling:** Tailwind CSS
-* **Package Manager:** Bun / npm
+## Team Members
+* **Member 1:** Arimbi
+* **Member 2:** Fajar
+* **Member 3:** Haikal
+* **Member 4:** Najwan
+* **Member 5:** Rendy
 
 ---
 
-## 📁 File Structure
+## Project Structure
 
 ```text
 CV-Team-website/
-├── .vscode/                     # VSCode workspace configurations
+├── .vscode/                 # Editor workspace configuration
 ├── src/
-│   ├── data/                    # Legacy / initial member and team datasets
-│   │   ├── member[1-5].ts
-│   │   ├── team.ts
-│   │   └── types.ts
 │   ├── lib/
-│   │   ├── components/          # Reusable Svelte UI components
-│   │   │   ├── Footer.svelte
-│   │   │   ├── Hero.svelte
-│   │   │   ├── MemberCard.svelte
-│   │   │   ├── MemberCVModal.svelte
-│   │   │   ├── Navbar.svelte
-│   │   │   └── ProjectDetail.svelte
-│   │   ├── data/                # Data stores for team, resumes, and projects
-│   │   │   ├── member[1-5].ts
+│   │   ├── assets/          # Static component-level assets & icons
+│   │   ├── components/      # UI components (Navbar, Hero, MemberCard, CVModal, Footer, etc.)
+│   │   ├── data/            # Member profile, resume, and project data definitions
+│   │   │   ├── member1.ts
+│   │   │   ├── member2.ts
+│   │   │   ├── member3.ts
+│   │   │   ├── member4.ts
+│   │   │   ├── member5.ts
 │   │   │   ├── projects.ts
 │   │   │   ├── resumes.ts
 │   │   │   └── team.ts
-│   │   └── types/               # TypeScript type definitions
-│   │       └── resume.ts
-│   └── routes/                  # SvelteKit application routes & API endpoints
-│       ├── api/                 # Internal API endpoints
-│       │   ├── project/[slug]/
-│       │   └── resume/[slug]/
-│       ├── project/[slug]/      # Project details page
-│       ├── resume/[slug]/       # Individual member CV page
-│       ├── +layout.svelte       # Root application layout
-│       └── +page.svelte         # Home landing page
+│   │   └── types/           # TypeScript interfaces & type definitions
+│   ├── routes/
+│   │   ├── api/             # API endpoints for dynamic data fetching
+│   │   │   ├── project/[slug]/
+│   │   │   └── resume/[slug]/
+│   │   ├── project/[slug]/  # Detailed project showcase routes
+│   │   ├── resume/[slug]/   # Individual member CV pages
+│   │   ├── +layout.svelte   # Root app layout & persistent navigation
+│   │   └── +page.svelte     # Homepage featuring the team showcase
+│   ├── app.d.ts             # Global TypeScript environment definitions
+│   └── app.html             # HTML template entry point
 ├── static/
-│   ├── data/                    # Static JSON resume schemas
-│   │   ├── arimbi.json
-│   │   ├── fajar.json
-│   │   ├── haikal.json
-│   │   ├── najwan.json
-│   │   └── rendy.json
-│   └── image/                   # Member avatars and team media
-│       ├── arimbi.jpg
-│       ├── fajar.jpg
-│       ├── haikal.jpg
-│       ├── najwan.jpg
-│       └── rendy.jpg
-├── .env.example                 # Sample environment configuration
-├── eslint.config.js             # ESLint configuration
-├── package.json                 # Project dependencies and run scripts
-└── prettier.config.js           # Code formatting rules
+│   ├── data/                # Raw JSON member datasets
+│   └── image/               # Team member profile pictures and illustrations
+├── .env.example             # Environment variable templates
+├── package.json             # Dependencies and build scripts
+└── svelte.config.js         # Framework & adapter configurations
